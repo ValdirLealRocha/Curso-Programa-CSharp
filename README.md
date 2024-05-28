@@ -3,6 +3,8 @@ Tenho um pouco de familiaridade com C#, pois utilizei esta plataforma para desen
 
 Me dasafiei e novamente saindo do meu espaço de conforto, decidi estudar e Aprendendo a Aprender! :)
 
+Sempre utilizei IDE/Framework baseado em janelas "For Windows", neste curso iniciamos a pogramação usando o VS-Code que me lembra muito do tempo que programava em Clipper...kkkk E na sequencia será utilizado a parte visual do Visual Studio Code e Visual Studio!
+
 # Neste exato momento vou iniciar meus estudos com o C#!
 Vou deixar aqui no GitHub todos os códigos que eu pratiquei através das aulas do Canal no Youtube: https://www.youtube.com/@cfbcursos do Bruno!
 
