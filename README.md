@@ -33,4 +33,14 @@ A sua sintaxe orientada a objetos foi baseada no C++ mas inclui muitas influênc
 
 OBS.: No curso eu decidi separar as aulas em arquivos, para o meu aprendizado, não tome como base os meus estudos, siga as aulas e tenha a sua forma de trabalhar e de estudar. :)
 
-Aula 01 - 
+Aula 001   - Curso Programação Completo C#
+
+Aula 001.1 - Usando VS Community para criar programas console
+
+Aula 001.2 - Criando programas C# sem instalar nada usando o repl.it
+
+Aula 002   - Primeiro programa no padrão c# .net
+
+
+
+Aula 132   -
