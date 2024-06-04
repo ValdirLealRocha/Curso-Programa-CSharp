@@ -12,7 +12,6 @@
 //
 // biblioteca padrão de uso no C#
 using System;
-using System.Security.Cryptography;
 
 // nossa primeira classe
 class PrincipalAula010 {

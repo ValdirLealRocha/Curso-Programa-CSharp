@@ -57,6 +57,8 @@ Aula 009   - Operações de Bitwise
 
 Aula 010   - Enumeradores (enum)
 
+Aula 011   - Conversões de tipos (typecast)
+
 
 
 Aula 132   -
