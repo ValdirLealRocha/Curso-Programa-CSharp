@@ -43,6 +43,8 @@ Aula 002   - Primeiro programa no padrão c# .net
 
 Aula 003   - Variáveis
 
+Aula 004   - Escopo de variáveis
+
 
 
 Aula 132   -
