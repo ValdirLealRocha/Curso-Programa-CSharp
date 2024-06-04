@@ -12,7 +12,7 @@
 using System;
 
 // nossa primeira classe
-class Principal {
+class PrincipalAula002 {
   
   // Main é o principal para executar um programa em C#
   static void Main(string[] args) {

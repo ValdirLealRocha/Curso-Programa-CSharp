@@ -24,10 +24,10 @@
 using System; // biblioteca das definições do C#, entrada e saída, console, tecklado...
 
 // nossa primeira classe
-class Principal {
+class PrincipalAula001 {
   
   // Main é o principal para executar um programa em C#
-  static void Main() {
+  static void Main(string[] args) {
     Console.Write("Primeiro programa C#...");
   }
 

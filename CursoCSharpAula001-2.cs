@@ -9,10 +9,10 @@
 using System;
 
 // nossa primeira classe
-class Principal {
+class PrincipalAula001_2 {
   
   // Main é o principal para executar um programa em C#
-  static void Main() {
+  static void Main(string[] args) {
     Console.Write("Mais uma dica pra quem não está conseguindo usar o VS-Code...");
   }
 

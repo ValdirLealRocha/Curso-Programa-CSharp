@@ -14,10 +14,10 @@
 using System; 
 
 // nossa primeira classe
-class Principal {
+class PrincipalAula001_1 {
   
   // Main é o principal para executar um programa em C#
-  static void Main() {
+  static void Main(string[] args) {
     Console.Write("Nesta aula vimos como trabalhar no console do .NET Framework do Visual Studio");
   }
 
