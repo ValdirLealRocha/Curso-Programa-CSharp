@@ -53,6 +53,8 @@ Aula 007   - Constantes em C#
 
 Aula 008   - Lendo valores do teclado
 
+Aula 009   - Operações de Bitwise
+
 
 
 Aula 132   -
