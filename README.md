@@ -67,6 +67,8 @@ Aula 014    - IF aninhado
 
 Aula 015    - SWITCH case
 
+Aula 016    - Comando goto
 
 
-Aula 132   -
+
+Aula 132    -
