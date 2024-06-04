@@ -51,6 +51,8 @@ Aula 006   - Formatando a saída no console
 
 Aula 007   - Constantes em C#
 
+Aula 008   - Lendo valores do teclado
+
 
 
 Aula 132   -
