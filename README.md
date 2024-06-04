@@ -49,6 +49,8 @@ Aula 005   - Operadores e Operações
 
 Aula 006   - Formatando a saída no console
 
+Aula 007   - Constantes em C#
+
 
 
 Aula 132   -
