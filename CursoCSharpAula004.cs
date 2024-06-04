@@ -1,4 +1,4 @@
-// AULA 04 - https://youtu.be/1tsK4u4Hmck?list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi
+// AULA 004 - https://youtu.be/1tsK4u4Hmck?list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi
 // Escopo de variáveis
 //
 // abrir terminal e digital na pasta do projeto:

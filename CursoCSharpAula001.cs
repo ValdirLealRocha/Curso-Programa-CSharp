@@ -1,4 +1,4 @@
-// AULA 01 - https://youtu.be/dVzJ3bx68FA?list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi
+// AULA 001 - https://youtu.be/dVzJ3bx68FA?list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi
 // Curso Programação Completo C#
 // Na aula de hoje do curso programação C#, vamos baixar todo conteúdo necessário, 
 // instalar as ferramentas e configurar tudo para que possamos aprende a programar em C#.

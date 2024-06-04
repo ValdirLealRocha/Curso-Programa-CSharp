@@ -47,6 +47,8 @@ Aula 004   - Escopo de variáveis
 
 Aula 005   - Operadores e Operações
 
+Aula 006   - Formatando a saída no console
+
 
 
 Aula 132   -

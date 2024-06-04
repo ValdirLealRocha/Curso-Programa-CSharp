@@ -1,4 +1,4 @@
-// AULA 05 - https://youtu.be/f8rDk6nJ9DE?list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi
+// AULA 005 - https://youtu.be/f8rDk6nJ9DE?list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi
 // Operadores e Operações
 //
 // abrir terminal e digital na pasta do projeto:

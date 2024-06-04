@@ -1,4 +1,4 @@
-// AULA 02 - https://youtu.be/2cGjyyw5ifQ?list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi
+// AULA 002 - https://youtu.be/2cGjyyw5ifQ?list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi
 // Primeiro programa no padrão c# .net
 // biblioteca padrão de uso no C#
 //

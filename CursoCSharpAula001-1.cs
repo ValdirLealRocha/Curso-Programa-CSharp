@@ -1,4 +1,4 @@
-// AULA 01.1 - https://youtu.be/xCU9X7SFxPg?list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi
+// AULA 001.1 - https://youtu.be/xCU9X7SFxPg?list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi
 // Usando VS Community para criar programas console
 //
 // Quem estava com dificuldades de utilizar o VS-Code, 

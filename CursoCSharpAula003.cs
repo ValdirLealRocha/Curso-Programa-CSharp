@@ -1,4 +1,4 @@
-// AULA 03 - https://youtu.be/25gWhVRRYDI?list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi
+// AULA 003 - https://youtu.be/25gWhVRRYDI?list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi
 // Variáveis
 //
 // abrir terminal e digital na pasta do projeto:
