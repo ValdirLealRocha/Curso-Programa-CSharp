@@ -69,6 +69,8 @@ Aula 015    - SWITCH case
 
 Aula 016    - Comando goto
 
+Aula 017    - Array / Vetor
+
 
 
 Aula 132    -
