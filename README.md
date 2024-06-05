@@ -71,6 +71,8 @@ Aula 016    - Comando goto
 
 Aula 017    - Array / Vetor
 
+Aula 018    - Matrizes / Vetores Bidimensionais
+
 
 
 Aula 132    -
