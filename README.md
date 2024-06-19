@@ -73,6 +73,22 @@ Aula 017    - Array / Vetor
 
 Aula 018    - Matrizes / Vetores Bidimensionais
 
+Aula 019    - Loop FOR / Estruturas de iteração
+
+Aula 020    - Loop WHILE / Estruturas de iteração
+
+Aula 021    - Loop DO WHILE / Estruturas de iteração
+
+Aula 022    - Loop FOREACH / Estruturas de iteração
+
+Aula 023    - Métodos para arrays #P1
+
+Aula 024    - Métodos
+
+Aula 025    - Passagem por valor e por referência
+
+Aula 026    - Argumento out
+
 
 
 Aula 132    -
