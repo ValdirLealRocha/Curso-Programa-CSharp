@@ -89,6 +89,12 @@ Aula 025    - Passagem por valor e por referência
 
 Aula 026    - Argumento out
 
+Aula 027    - Argumento params
+
+Aula 028    - Classes e Objetos
+
+Aula 029    - Construtores e Destrutores
+
 
 
 Aula 132    -
