@@ -107,6 +107,8 @@ Aula 034    - Herança
 
 Aula 035    - Cadeia de herança e Construtor da classe base
 
+Aula 036    - Membros Protected
+
 
 
 Aula 132    -
