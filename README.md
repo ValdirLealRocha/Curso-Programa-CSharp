@@ -103,6 +103,10 @@ Aula 032    - This
 
 Aula 033    - Public vs Private
 
+Aula 034    - Herança
+
+Aula 035    - Cadeia de herança e Construtor da classe base
+
 
 
 Aula 132    -
