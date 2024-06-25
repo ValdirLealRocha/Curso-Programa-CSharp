@@ -113,6 +113,10 @@ Aula 037    - Herança/Ordem de execução dos construtores
 
 Aula 038    - Métodos virtuais
 
+Aula 039    - Classes e métodos abstratos
+
+Aula 040    - Classe Sealed
+
 
 
 Aula 132    -

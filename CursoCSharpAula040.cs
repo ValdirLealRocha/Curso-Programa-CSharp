@@ -1,5 +1,5 @@
-// AULA 038 - https://youtu.be/0Ya17g9g62Y?list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi
-// Métodos virtuais
+// AULA 040 - https://youtu.be/XHEm3aknA9g?list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi
+// Classe Sealed
 // abrir terminal e digital na pasta do projeto:
 // dotnet new console >>>> tem que ser num terminal cmd
 //
@@ -41,57 +41,23 @@
 // biblioteca padrão de uso no C#
 using System;
 
-// Classe BASE_
-class Base_ {
-  public Base_() {
-    Console.WriteLine("Construtor da Classe Base_");
-  }
+// A classe selada não pode ser herdada...
+sealed class VeiculoCS {
 
-  // método virtual da classe base_...
-  // só informar a assinatura, além de ser virtual será sobrescrito...
-  virtual public void info() {}
 }
 
-// Classe Derivada_1 herdada da classe BASE_
-class Derivada_1 : Base_ {
-  public Derivada_1() {
-    Console.WriteLine("Construtor da Classe Derivada_1");
-  }
-
-  // método virtual da classe Derivada_1...
-  override public void info() {
-    Console.WriteLine("Derivada_1");
-  }
-}
-
-// Classe Derivada_2 herdada da classe BASE_
-class Derivada_2 : Derivada_1 {
-  public Derivada_2() {
-    Console.WriteLine("Construtor da Classe Derivada_2");
-  }
-
-  // método virtual da classe Derivada_2...
-  override public void info() {
-    Console.WriteLine("Derivada_2");
-  }
-}
+// Classe CarroCHV herdada da classe VeiculoCS
+// abaixo já vai dar erro, pois não deveria existir uma herança...
+//class CarroCHV : VeiculoCS {}
 
 // nossa primeira classe
-class PrincipalAula038 {
+class PrincipalAula040 {
   // Main é o principal para executar um programa em C#
   static void Main(string[] args) {
     // declaração de variáveis
-    Base_ Ref;
-    Derivada_1 derivada_1 = new Derivada_1();
-    Derivada_2 derivada_2 = new Derivada_2();
+    // não pode ser instanciada por conta do erro de herança...
+    //CarroCHV c1 = new CarroCHV();
 
-    Ref = derivada_2;
-    Ref.info();
-
-    //base_.info();
-    //derivada_1.info();
-    //derivada_2.info();
-    
     Console.WriteLine("--------------------------------------------------");
   }
  }
