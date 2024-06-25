@@ -109,6 +109,8 @@ Aula 035    - Cadeia de herança e Construtor da classe base
 
 Aula 036    - Membros Protected
 
+Aula 037    - Herança/Ordem de execução dos construtores
+
 
 
 Aula 132    -
