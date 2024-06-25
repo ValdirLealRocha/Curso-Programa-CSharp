@@ -123,6 +123,8 @@ Aula 042    - Indexadores de Classes
 
 Aula 043    - Interfaces
 
+Aula 044    - Struct
+
 
 
 Aula 132    -
