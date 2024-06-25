@@ -117,6 +117,10 @@ Aula 039    - Classes e métodos abstratos
 
 Aula 040    - Classe Sealed
 
+Aula 041    - Acessors GET e SET
+
+Aula 042    - Indexadores de Classes
+
 
 
 Aula 132    -
