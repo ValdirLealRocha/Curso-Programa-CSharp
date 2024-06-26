@@ -125,6 +125,20 @@ Aula 043    - Interfaces
 
 Aula 044    - Struct
 
+Aula 045    - Array de estruturas
+
+Aula 046    - Métodos que retornam objetos
+
+Aula 047    - Sobrecarga de métodos
+
+Aula 048    - Recursividade
+
+Aula 049    - Métodos e Variáveis estáticos (static)
+
+Aula 050    - Delegates
+
+Aula 051    - Argumentos de entrada do programa
+
 
 
 Aula 132    -
