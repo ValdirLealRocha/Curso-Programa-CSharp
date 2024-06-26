@@ -139,6 +139,24 @@ Aula 050    - Delegates
 
 Aula 051    - Argumentos de entrada do programa
 
+Aula 052    - Exceções - Try Catch Finally - P1
+
+Aula 053    - Exceções - Try Catch Finally - P2
+
+Aula 054    - Namespaces
+
+Aula 055    - Coleção Dictionary
+
+Aula 056    - Coleção LinkedList / Lista duplamente encadeada
+
+Aula 057    - Coleção List P1
+
+Aula 058    - Coleção List P2
+
+Aula 059    - Coleção Queue (Fila) - última aula no modo TERMINAL...
+
+Aula 060    - Visual Studio 2019 - Aula 1
+
 
 
 Aula 132    -
