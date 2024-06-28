@@ -12,9 +12,15 @@ namespace Aula062
 {
     public partial class frm_Principal : Form
     {
+        // propriedades da classe
+        public int num;
+
         public frm_Principal()
         {
             InitializeComponent();
+
+            // inicializa num
+            num = 0;
         }
 
         private void btn_Adicionar_Click(object sender, EventArgs e)
@@ -44,9 +50,28 @@ namespace Aula062
 
         private void btn_MostrarVeiculos_Click(object sender, EventArgs e)
         {
-            frm_Veiculos frmveiculos = new frm_Veiculos(txt_ListaVeiculos.Text);
+            frm_Veiculos frmveiculos = new frm_Veiculos(txt_ListaVeiculos.Text, this);
             frmveiculos.ShowDialog(); // não permite acesso as janelas anteriores...
             //frmveiculos.Show(); // posso clicar em janelas anteriores...
+        }
+
+        private void btn_MostraValorNum_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Valor de num = " + num.ToString());
+        }
+
+        private void checkBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // abre o formulário checkbox via menu
+            frm_CheckBox frmCheckBox = new frm_CheckBox();
+            frmCheckBox.ShowDialog();
+        }
+
+        private void checkedListBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // abre o formulário checkedlistbox via menu
+            frm_CheckedListBox frmCheckedListBox = new frm_CheckedListBox();
+            frmCheckedListBox.ShowDialog();
         }
     }
 }

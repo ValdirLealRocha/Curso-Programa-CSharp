@@ -163,6 +163,10 @@ Aula 062    - Componente Textbox
 
 Aula 063    - Criando e abrindo um novo form
 
+Aula 064    - Enviar dados de um formulário para outro
+
+Aula 065    - Como criar um menu
+
 
 
 Aula 132    -
