@@ -155,7 +155,7 @@ Aula 058    - Coleção List P2
 
 Aula 059    - Coleção Queue (Fila) - última aula no modo TERMINAL...
 
-Aula 060    - Visual Studio 2019 - Aula 1 (eu instalei a VS2022)
+Aula 060    - Visual Studio 2019 - Aula 1 (eu instalei o VS2022)
 
 Aula 061    - Formulário, Manipulação de componentes, Evento de clique
 
