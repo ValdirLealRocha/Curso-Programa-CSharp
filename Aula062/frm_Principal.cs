@@ -41,5 +41,12 @@ namespace Aula062
             txt_Veiculo.Clear();
             txt_Veiculo.Focus();
         }
+
+        private void btn_MostrarVeiculos_Click(object sender, EventArgs e)
+        {
+            frm_Veiculos frmveiculos = new frm_Veiculos(txt_ListaVeiculos.Text);
+            frmveiculos.ShowDialog(); // não permite acesso as janelas anteriores...
+            //frmveiculos.Show(); // posso clicar em janelas anteriores...
+        }
     }
 }

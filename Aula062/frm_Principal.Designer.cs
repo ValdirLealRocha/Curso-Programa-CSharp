@@ -33,6 +33,7 @@
             this.lbl_Veiculo = new System.Windows.Forms.Label();
             this.txt_ListaVeiculos = new System.Windows.Forms.TextBox();
             this.btn_Limpar = new System.Windows.Forms.Button();
+            this.btn_MostrarVeiculos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_Veiculo
@@ -67,6 +68,7 @@
             this.txt_ListaVeiculos.Location = new System.Drawing.Point(15, 54);
             this.txt_ListaVeiculos.Multiline = true;
             this.txt_ListaVeiculos.Name = "txt_ListaVeiculos";
+            this.txt_ListaVeiculos.ReadOnly = true;
             this.txt_ListaVeiculos.Size = new System.Drawing.Size(248, 248);
             this.txt_ListaVeiculos.TabIndex = 3;
             // 
@@ -80,11 +82,22 @@
             this.btn_Limpar.UseVisualStyleBackColor = true;
             this.btn_Limpar.Click += new System.EventHandler(this.btn_Limpar_Click);
             // 
+            // btn_MostrarVeiculos
+            // 
+            this.btn_MostrarVeiculos.Location = new System.Drawing.Point(12, 337);
+            this.btn_MostrarVeiculos.Name = "btn_MostrarVeiculos";
+            this.btn_MostrarVeiculos.Size = new System.Drawing.Size(248, 23);
+            this.btn_MostrarVeiculos.TabIndex = 5;
+            this.btn_MostrarVeiculos.Text = "Mostrar Veículos";
+            this.btn_MostrarVeiculos.UseVisualStyleBackColor = true;
+            this.btn_MostrarVeiculos.Click += new System.EventHandler(this.btn_MostrarVeiculos_Click);
+            // 
             // frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 338);
+            this.ClientSize = new System.Drawing.Size(278, 370);
+            this.Controls.Add(this.btn_MostrarVeiculos);
             this.Controls.Add(this.btn_Limpar);
             this.Controls.Add(this.txt_ListaVeiculos);
             this.Controls.Add(this.lbl_Veiculo);
@@ -95,7 +108,7 @@
             this.MinimizeBox = false;
             this.Name = "frm_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Principal | Aulas 62 do Curso de C# - CFB Cursos";
+            this.Text = "Principal | Aulas 62 e 63 do Curso de C# - CFB Cursos";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,6 +121,7 @@
         private System.Windows.Forms.Label lbl_Veiculo;
         private System.Windows.Forms.TextBox txt_ListaVeiculos;
         private System.Windows.Forms.Button btn_Limpar;
+        private System.Windows.Forms.Button btn_MostrarVeiculos;
     }
 }
 

@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|d:\\projetosdev\\curso-programa-csharp\\aula062\\frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|d:\\projetosdev\\curso-programa-csharp\\aula062\\frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_veiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_veiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|d:\\projetosdev\\curso-programa-csharp\\aula062\\frm_veiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_veiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +26,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frm_Veiculos.cs",
+              "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Veiculos.cs",
+              "RelativeDocumentMoniker": "frm_Veiculos.cs",
+              "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Veiculos.cs",
+              "RelativeToolTip": "frm_Veiculos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T16:44:51.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frm_Veiculos.cs [Design]",
+              "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Veiculos.cs",
+              "RelativeDocumentMoniker": "frm_Veiculos.cs",
+              "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Veiculos.cs [Design]",
+              "RelativeToolTip": "frm_Veiculos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T11:53:58.986Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -28,7 +61,7 @@
               "RelativeDocumentMoniker": "frm_Principal.cs",
               "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Principal.cs",
               "RelativeToolTip": "frm_Principal.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAuwBwAAAApAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAmwC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-28T11:16:33.74Z",
               "EditorCaption": ""
