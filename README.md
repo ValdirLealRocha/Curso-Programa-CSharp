@@ -167,6 +167,10 @@ Aula 064    - Enviar dados de um formulário para outro
 
 Aula 065    - Como criar um menu
 
+Aula 066    - Como usar CheckBox com C# no Visual Studio
+
+Aula 067    - Verificar formulários abertos / OpenForms
+
 
 
 Aula 132    -

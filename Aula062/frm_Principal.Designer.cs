@@ -130,14 +130,14 @@
             // checkBoxToolStripMenuItem
             // 
             this.checkBoxToolStripMenuItem.Name = "checkBoxToolStripMenuItem";
-            this.checkBoxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkBoxToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.checkBoxToolStripMenuItem.Text = "CheckBox";
             this.checkBoxToolStripMenuItem.Click += new System.EventHandler(this.checkBoxToolStripMenuItem_Click);
             // 
             // checkedListBoxToolStripMenuItem
             // 
             this.checkedListBoxToolStripMenuItem.Name = "checkedListBoxToolStripMenuItem";
-            this.checkedListBoxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkedListBoxToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.checkedListBoxToolStripMenuItem.Text = "CheckedListBox";
             this.checkedListBoxToolStripMenuItem.Click += new System.EventHandler(this.checkedListBoxToolStripMenuItem_Click);
             // 
@@ -160,7 +160,7 @@
             this.MinimizeBox = false;
             this.Name = "frm_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Principal | Aulas 62, 63, 64 e 65 do Curso de C# - CFB Cursos";
+            this.Text = "Principal | Aulas 62 até 67 do Curso de C# - CFB Cursos";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
