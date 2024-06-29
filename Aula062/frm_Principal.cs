@@ -80,5 +80,12 @@ namespace Aula062
             frm_ComboBox frmComboBox = new frm_ComboBox();
             frmComboBox.ShowDialog();
         }
+
+        private void dateTimePickerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // abre o formulário combobox via menu
+            frm_DataTimePicker frmDataTimePicker = new frm_DataTimePicker();
+            frmDataTimePicker.ShowDialog();
+        }
     }
 }
