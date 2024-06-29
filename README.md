@@ -171,6 +171,8 @@ Aula 066    - Como usar CheckBox com C# no Visual Studio
 
 Aula 067    - Verificar formulários abertos / OpenForms
 
+Aula 068    - Checked ListBox
+
 
 
 Aula 132    -

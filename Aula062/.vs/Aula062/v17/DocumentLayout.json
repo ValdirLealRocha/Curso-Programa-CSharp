@@ -3,36 +3,16 @@
   "WorkspaceRootPath": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|d:\\projetosdev\\curso-programa-csharp\\aula062\\frm_filhocheckbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_filhocheckbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|d:\\projetosdev\\curso-programa-csharp\\aula062\\frm_filhocheckbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_filhocheckbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|d:\\projetosdev\\curso-programa-csharp\\aula062\\frm_checkbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_checkbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_checkbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_checkbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|d:\\projetosdev\\curso-programa-csharp\\aula062\\frm_veiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_veiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|d:\\projetosdev\\curso-programa-csharp\\aula062\\frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|d:\\projetosdev\\curso-programa-csharp\\aula062\\frm_checkedlistbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_checkedlistbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_checkedlistbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_checkedlistbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|d:\\projetosdev\\curso-programa-csharp\\aula062\\frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,98 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frm_CheckBox.cs",
-              "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_CheckBox.cs",
-              "RelativeDocumentMoniker": "frm_CheckBox.cs",
-              "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_CheckBox.cs",
-              "RelativeToolTip": "frm_CheckBox.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAAwFEAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "frm_CheckedListBox.cs",
+              "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_CheckedListBox.cs",
+              "RelativeDocumentMoniker": "frm_CheckedListBox.cs",
+              "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_CheckedListBox.cs",
+              "RelativeToolTip": "frm_CheckedListBox.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAwE8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T13:56:52.834Z",
+              "WhenOpened": "2024-06-29T15:00:14.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frm_FilhoCheckBox.cs [Design]",
-              "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_FilhoCheckBox.cs",
-              "RelativeDocumentMoniker": "frm_FilhoCheckBox.cs",
-              "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_FilhoCheckBox.cs [Design]",
-              "RelativeToolTip": "frm_FilhoCheckBox.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T13:30:03.392Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frm_Principal.cs [Design]",
-              "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Principal.cs",
-              "RelativeDocumentMoniker": "frm_Principal.cs",
-              "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Principal.cs [Design]",
-              "RelativeToolTip": "frm_Principal.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T15:00:10.908Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frm_FilhoCheckBox.cs",
-              "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_FilhoCheckBox.cs",
-              "RelativeDocumentMoniker": "frm_FilhoCheckBox.cs",
-              "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_FilhoCheckBox.cs",
-              "RelativeToolTip": "frm_FilhoCheckBox.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAwCYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T13:36:04.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frm_Veiculos.cs [Design]",
-              "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Veiculos.cs",
-              "RelativeDocumentMoniker": "frm_Veiculos.cs",
-              "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Veiculos.cs [Design]",
-              "RelativeToolTip": "frm_Veiculos.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T13:31:39.081Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frm_CheckBox.cs [Design]",
-              "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_CheckBox.cs",
-              "RelativeDocumentMoniker": "frm_CheckBox.cs",
-              "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_CheckBox.cs [Design]",
-              "RelativeToolTip": "frm_CheckBox.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T21:04:40.266Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frm_Principal.cs",
-              "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Principal.cs",
-              "RelativeDocumentMoniker": "frm_Principal.cs",
-              "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Principal.cs",
-              "RelativeToolTip": "frm_Principal.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAuwE0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T13:48:11.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "frm_CheckedListBox.cs [Design]",
               "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_CheckedListBox.cs",
               "RelativeDocumentMoniker": "frm_CheckedListBox.cs",
@@ -141,6 +47,18 @@
               "RelativeToolTip": "frm_CheckedListBox.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-28T22:02:36.072Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frm_Principal.cs [Design]",
+              "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Principal.cs",
+              "RelativeDocumentMoniker": "frm_Principal.cs",
+              "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Principal.cs [Design]",
+              "RelativeToolTip": "frm_Principal.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T14:49:47.109Z",
               "EditorCaption": " [Design]"
             }
           ]

@@ -160,7 +160,7 @@
             this.MinimizeBox = false;
             this.Name = "frm_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Principal | Aulas 62 até 67 do Curso de C# - CFB Cursos";
+            this.Text = "Principal | Aulas 62 até 68 do Curso de C# - CFB Cursos";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
