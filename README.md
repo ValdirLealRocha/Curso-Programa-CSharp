@@ -177,6 +177,8 @@ Aula 069    - ComboBox
 
 Aula 070    - DateTimePicker
 
+Aula 071    - LinkLabel
+
 
 
 Aula 132    -

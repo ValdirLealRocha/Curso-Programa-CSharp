@@ -62,30 +62,37 @@ namespace Aula062
 
         private void checkBoxToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // abre o formulário checkbox via menu
+            // abre o formulário frm_CheckBox via menu
             frm_CheckBox frmCheckBox = new frm_CheckBox();
             frmCheckBox.ShowDialog();
         }
 
         private void checkedListBoxToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // abre o formulário checkedlistbox via menu
+            // abre o formulário frm_CheckedListBox via menu
             frm_CheckedListBox frmCheckedListBox = new frm_CheckedListBox();
             frmCheckedListBox.ShowDialog();
         }
 
         private void comboBoxToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // abre o formulário combobox via menu
+            // abre o formulário frm_ComboBox via menu
             frm_ComboBox frmComboBox = new frm_ComboBox();
             frmComboBox.ShowDialog();
         }
 
         private void dateTimePickerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // abre o formulário combobox via menu
+            // abre o formulário frm_DataTimePicker via menu
             frm_DataTimePicker frmDataTimePicker = new frm_DataTimePicker();
             frmDataTimePicker.ShowDialog();
+        }
+
+        private void linkLabelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_LinkLabel via menu
+            frm_LinkLabel frmLinkLabel = new frm_LinkLabel();
+            frmLinkLabel.ShowDialog();
         }
     }
 }

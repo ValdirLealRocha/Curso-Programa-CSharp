@@ -41,6 +41,7 @@
             this.checkedListBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comboBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dateTimePickerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.linkLabelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,7 +127,8 @@
             this.checkBoxToolStripMenuItem,
             this.checkedListBoxToolStripMenuItem,
             this.comboBoxToolStripMenuItem,
-            this.dateTimePickerToolStripMenuItem});
+            this.dateTimePickerToolStripMenuItem,
+            this.linkLabelToolStripMenuItem});
             this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.componentesToolStripMenuItem.Text = "Componentes";
@@ -159,6 +161,13 @@
             this.dateTimePickerToolStripMenuItem.Text = "DateTimePicker";
             this.dateTimePickerToolStripMenuItem.Click += new System.EventHandler(this.dateTimePickerToolStripMenuItem_Click);
             // 
+            // linkLabelToolStripMenuItem
+            // 
+            this.linkLabelToolStripMenuItem.Name = "linkLabelToolStripMenuItem";
+            this.linkLabelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.linkLabelToolStripMenuItem.Text = "LinkLabel";
+            this.linkLabelToolStripMenuItem.Click += new System.EventHandler(this.linkLabelToolStripMenuItem_Click);
+            // 
             // frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,7 +187,7 @@
             this.MinimizeBox = false;
             this.Name = "frm_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Principal | Aulas 62 até 70 do Curso de C# - CFB Cursos";
+            this.Text = "Principal | Aulas 62 até 71 do Curso de C# - CFB Cursos";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -201,6 +210,7 @@
         private System.Windows.Forms.ToolStripMenuItem checkedListBoxToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem comboBoxToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dateTimePickerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem linkLabelToolStripMenuItem;
     }
 }
 
