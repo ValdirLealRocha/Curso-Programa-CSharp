@@ -173,6 +173,8 @@ Aula 067    - Verificar formulários abertos / OpenForms
 
 Aula 068    - Checked ListBox
 
+Aula 069    - ComboBox
+
 
 
 Aula 132    -

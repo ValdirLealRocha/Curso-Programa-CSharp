@@ -73,5 +73,12 @@ namespace Aula062
             frm_CheckedListBox frmCheckedListBox = new frm_CheckedListBox();
             frmCheckedListBox.ShowDialog();
         }
+
+        private void comboBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // abre o formulário combobox via menu
+            frm_ComboBox frmComboBox = new frm_ComboBox();
+            frmComboBox.ShowDialog();
+        }
     }
 }
