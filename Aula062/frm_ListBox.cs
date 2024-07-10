@@ -46,7 +46,7 @@ namespace Aula062
                 //ltb_Carros.DataSource = null;
                 //ltb_Carros.DataSource = carros;
                 // utilizando método para evitar código duplicado
-                AtualizaLista();
+                AtualizaLista(ltb_Carros, carros);
             }
         }
 
@@ -58,7 +58,7 @@ namespace Aula062
             //ltb_Carros.DataSource = null;
             //ltb_Carros.DataSource = carros;
             // utilizando método para evitar código duplicado
-            AtualizaLista();
+            AtualizaLista(ltb_Carros, carros);
         }
 
         private void btn_Obter_Click(object sender, EventArgs e)
@@ -80,14 +80,14 @@ namespace Aula062
             //ltb_Carros.DataSource = null;
             //ltb_Carros.DataSource = carros;
             // utilizando método para evitar código duplicado
-            AtualizaLista();
+            AtualizaLista(ltb_Carros, carros);
         }
 
-        private void AtualizaLista()
+        private void AtualizaLista(ListBox list_box, List<string> lista_carros)
         {
             // atualiza a lista
-            ltb_Carros.DataSource = null;
-            ltb_Carros.DataSource = carros;
+            list_box.DataSource = null;
+            list_box.DataSource = lista_carros;
         }
     }
 }
