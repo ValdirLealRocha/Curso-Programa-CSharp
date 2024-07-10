@@ -94,5 +94,12 @@ namespace Aula062
             frm_LinkLabel frmLinkLabel = new frm_LinkLabel();
             frmLinkLabel.ShowDialog();
         }
+
+        private void listBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_ListBox via menu
+            frm_ListBox frmListBox = new frm_ListBox();
+            frmListBox.ShowDialog();
+        }
     }
 }
