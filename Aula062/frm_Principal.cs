@@ -150,5 +150,12 @@ namespace Aula062
             frm_NumericUpDown frmNumericUpDown = new frm_NumericUpDown();
             frmNumericUpDown.ShowDialog();
         }
+
+        private void pictureBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_PictureBox via menu
+            frm_PictureBox frmPictureBox = new frm_PictureBox();
+            frmPictureBox.ShowDialog();
+        }
     }
 }

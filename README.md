@@ -195,6 +195,8 @@ Aula 078    - NotifyIcon e ContextMenuStrip
 
 Aula 079    - NumericUpDown
 
+Aula 080    - PictureBox e Arquivo de recursos
 
+Aula 081    - 
 
 Aula 132    -
