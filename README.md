@@ -193,6 +193,8 @@ Aula 077    - MonthCalendar
 
 Aula 078    - NotifyIcon e ContextMenuStrip
 
+Aula 079    - NumericUpDown
+
 
 
 Aula 132    -

@@ -122,5 +122,33 @@ namespace Aula062
             frm_MonthCalendar frmMonthCalendar = new frm_MonthCalendar();
             frmMonthCalendar.ShowDialog();
         }
+
+        private void MenuNotificacoes_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            // tratar item selecionado no menustrip...
+            if (e.ClickedItem.Name.ToString() == "tsmi_Fechar") 
+            {
+                // fechar o programa...
+                this.Close();
+            }
+            else if (e.ClickedItem.Name.ToString() == "tsmi_Restaurar")
+            {
+                // volta ao estado da janela normal...
+                // Não mudará nada por conta de estar como Dialog
+                this.WindowState = FormWindowState.Normal;
+            }
+            else if (e.ClickedItem.Name.ToString() == "tsmi_Mensagem")
+            {
+                // mostra uma mensagem...
+                MessageBox.Show("CFB Cursos");
+            }
+        }
+
+        private void numericUpDownToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_NumericUpDown via menu
+            frm_NumericUpDown frmNumericUpDown = new frm_NumericUpDown();
+            frmNumericUpDown.ShowDialog();
+        }
     }
 }
