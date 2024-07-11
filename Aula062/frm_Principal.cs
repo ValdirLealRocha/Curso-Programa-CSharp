@@ -115,5 +115,12 @@ namespace Aula062
             frm_MaskedTextBox frmMaskedTextBox = new frm_MaskedTextBox();
             frmMaskedTextBox.ShowDialog();
         }
+
+        private void monthCalendarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_MonthCalendar via menu
+            frm_MonthCalendar frmMonthCalendar = new frm_MonthCalendar();
+            frmMonthCalendar.ShowDialog();
+        }
     }
 }
