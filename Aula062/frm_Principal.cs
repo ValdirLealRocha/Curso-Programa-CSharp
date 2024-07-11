@@ -108,5 +108,12 @@ namespace Aula062
             frm_ListView frmListView = new frm_ListView();
             frmListView.ShowDialog();
         }
+
+        private void maskedTextBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_MaskedTextBox via menu
+            frm_MaskedTextBox frmMaskedTextBox = new frm_MaskedTextBox();
+            frmMaskedTextBox.ShowDialog();
+        }
     }
 }
