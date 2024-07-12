@@ -164,5 +164,12 @@ namespace Aula062
             frm_ProgressBar frmProgressBar = new frm_ProgressBar();
             frmProgressBar.ShowDialog();
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_RadioButton via menu
+            frm_RadioButton frmRadioButton = new frm_RadioButton();
+            frmRadioButton.ShowDialog();
+        }
     }
 }
