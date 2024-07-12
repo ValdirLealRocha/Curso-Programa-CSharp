@@ -157,5 +157,12 @@ namespace Aula062
             frm_PictureBox frmPictureBox = new frm_PictureBox();
             frmPictureBox.ShowDialog();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_ProgressBar via menu
+            frm_ProgressBar frmProgressBar = new frm_ProgressBar();
+            frmProgressBar.ShowDialog();
+        }
     }
 }
