@@ -201,6 +201,20 @@ Aula 081    - Como usar a progressbar
 
 Aula 082    - Radiobutton
 
+Aula 083    - Criando um Editor de Texto #P1
+
+Aula 084    - Criando um Editor de Texto #P2
+
+Aula 085    - Criando um Editor de Texto #P3
+
+Aula 086    - Criando um Editor de Texto #P4
+
+Aula 087    - Criando um Editor de Texto #P5
+
+Aula 088    - Criando um Editor de Texto #P6
+
+Aula 089    - Criando um Editor de Texto #P7
+
 
 
 Aula 132    -
