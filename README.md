@@ -35,7 +35,7 @@ OBS.: No curso eu decidi separar as aulas em arquivos, para o meu aprendizado, n
 
 -----------------------------------------------------------
 
-Aulas 001 até 059 foram codificadas via console do VS-Code!
+## Aulas 001 até 059 foram codificadas via console do VS-Code!
 
 -----------------------------------------------------------
 
@@ -163,8 +163,8 @@ Aula 059    - Coleção Queue (Fila) - última aula no modo TERMINAL...
 
 -----------------------------------------------------------
 
-Aulas 060 até 061 foram codificadas no Visual Studio 2022
-( Pasta Aula060 - Projeto: Aula060.sln )
+## Aulas 060 até 061 foram codificadas no Visual Studio 2022
+## ( Pasta Aula060 - Projeto: Aula060.sln )
 
 --------------------------------------------------------------------------
 
@@ -174,8 +174,8 @@ Aula 061    - Formulário, Manipulação de componentes, Evento de clique
 
 -----------------------------------------------------------
 
-Aulas 062 até 082 foram codificadas no Visual Studio 2022
-( Pasta Aula062 - Projeto: Aula062.sln )
+## Aulas 062 até 082 foram codificadas no Visual Studio 2022
+## ( Pasta Aula062 - Projeto: Aula062.sln )
 
 --------------------------------------------------------------------------
 
@@ -223,8 +223,8 @@ Aula 082    - Radiobutton
 
 -----------------------------------------------------------
 
-Aulas 083 até 089 foram codificadas no Visual Studio 2022
-( Pasta Aula083 - Projeto: Aula083.sln )
+## Aulas 083 até 089 foram codificadas no Visual Studio 2022
+## ( Pasta Aula083 - Projeto: Aula083.sln )
 
 --------------------------------------------------------------------------
 
@@ -244,8 +244,8 @@ Aula 089    - Criando um Editor de Texto #P7
 
 -----------------------------------------------------------
 
-Aulas 090 até 092 foram codificadas no Visual Studio 2022
-( Pasta Aula062 - Continuação no Projeto: Aula062.sln )
+## Aulas 090 até 092 foram codificadas no Visual Studio 2022
+## ( Pasta Aula062 - Continuação no Projeto: Aula062.sln )
 
 --------------------------------------------------------------------------
 
