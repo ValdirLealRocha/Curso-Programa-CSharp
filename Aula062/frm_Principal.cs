@@ -171,5 +171,12 @@ namespace Aula062
             frm_RadioButton frmRadioButton = new frm_RadioButton();
             frmRadioButton.ShowDialog();
         }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_TracBar via menu
+            frm_TrackBar frmTracBar = new frm_TrackBar();
+            frmTracBar.ShowDialog();
+        }
     }
 }
