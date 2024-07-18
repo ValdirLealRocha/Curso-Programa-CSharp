@@ -178,5 +178,12 @@ namespace Aula062
             frm_TrackBar frmTracBar = new frm_TrackBar();
             frmTracBar.ShowDialog();
         }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_TreeView via menu
+            frm_TreeView frmTreeView = new frm_TreeView();
+            frmTreeView.ShowDialog();
+        }
     }
 }
