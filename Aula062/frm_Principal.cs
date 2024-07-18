@@ -185,5 +185,19 @@ namespace Aula062
             frm_TreeView frmTreeView = new frm_TreeView();
             frmTreeView.ShowDialog();
         }
+
+        private void webBrowserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_WebBrowser via menu
+            frm_WebBrowser frmWebBrowser = new frm_WebBrowser();
+            frmWebBrowser.ShowDialog();
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_SplitContainer via menu
+            frm_SplitContainer frmSplitContainer = new frm_SplitContainer();
+            frmSplitContainer.ShowDialog();
+        }
     }
 }
