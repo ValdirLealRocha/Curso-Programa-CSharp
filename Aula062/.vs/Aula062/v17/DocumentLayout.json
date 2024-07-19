@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|d:\\projetosdev\\curso-programa-csharp\\aula062\\frm_tablelayoutpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_tablelayoutpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|d:\\projetosdev\\curso-programa-csharp\\aula062\\frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{24E0ACE8-B2E2-4557-BDC7-0B6BB00214AD}|Aula062.csproj|solutionrelative:frm_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -18,24 +22,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "frm_TableLayoutPanel.cs [Design]",
+              "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_TableLayoutPanel.cs",
+              "RelativeDocumentMoniker": "frm_TableLayoutPanel.cs",
+              "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_TableLayoutPanel.cs [Design]",
+              "RelativeToolTip": "frm_TableLayoutPanel.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T19:19:18.284Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "frm_Principal.cs",
               "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Principal.cs",
               "RelativeDocumentMoniker": "frm_Principal.cs",
               "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Principal.cs",
               "RelativeToolTip": "frm_Principal.cs",
-              "ViewState": "AQIAALwAAAAAAAAAAAA8wNIAAAAAAAAA",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAmwJsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-11T15:23:23.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "frm_Principal.cs [Design]",
               "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula062\\frm_Principal.cs",
               "RelativeDocumentMoniker": "frm_Principal.cs",

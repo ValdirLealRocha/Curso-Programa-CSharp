@@ -206,5 +206,12 @@ namespace Aula062
             frm_TabControl frmTabControl = new frm_TabControl();
             frmTabControl.ShowDialog();
         }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_TableLayoutPanel via menu
+            frm_TableLayoutPanel frmTableLayoutPanel = new frm_TableLayoutPanel();
+            frmTableLayoutPanel.ShowDialog();
+        }
     }
 }
