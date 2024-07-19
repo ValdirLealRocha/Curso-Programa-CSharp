@@ -213,5 +213,12 @@ namespace Aula062
             frm_TableLayoutPanel frmTableLayoutPanel = new frm_TableLayoutPanel();
             frmTableLayoutPanel.ShowDialog();
         }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_ToolStripContainer via menu
+            frm_ToolStripContainer frmToolStripContainer = new frm_ToolStripContainer();
+            frmToolStripContainer.ShowDialog();
+        }
     }
 }

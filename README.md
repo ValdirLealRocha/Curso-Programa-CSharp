@@ -241,7 +241,8 @@ Aula 094    - TabControl
 
 Aula 095    - TableLayoutPanel
 
-Aula 096    - 
+Aula 096    - ToolStripContainer
+
 Aula 097    - 
 Aula 098    - 
 Aula 099    - 
