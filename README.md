@@ -237,7 +237,8 @@ Aula 092    - Crie sue próprio Browser
 
 Aula 093    - SplitContainer
 
-Aula 094    - 
+Aula 094    - TabControl
+
 Aula 095    - 
 Aula 096    - 
 Aula 097    - 

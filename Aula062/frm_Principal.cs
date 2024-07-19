@@ -199,5 +199,12 @@ namespace Aula062
             frm_SplitContainer frmSplitContainer = new frm_SplitContainer();
             frmSplitContainer.ShowDialog();
         }
+
+        private void tabControlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_TabControl via menu
+            frm_TabControl frmTabControl = new frm_TabControl();
+            frmTabControl.ShowDialog();
+        }
     }
 }
