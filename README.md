@@ -245,7 +245,8 @@ Aula 096    - ToolStripContainer
 
 Aula 097    - Componente Backgroundworker
 
-Aula 098    - 
+Aula 098    - Componente TIMER
+
 Aula 099    - 
 Aula 100    - 
 Aula 101    - 

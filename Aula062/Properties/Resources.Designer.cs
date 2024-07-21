@@ -61,6 +61,26 @@ namespace Aula062.Properties {
         }
         
         /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carro {
+            get {
+                object obj = ResourceManager.GetObject("carro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carro1 {
+            get {
+                object obj = ResourceManager.GetObject("carro1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a youtube.com/cfbcursos.
         /// </summary>
         internal static string EnderecoCanal {

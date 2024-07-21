@@ -60,6 +60,7 @@
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.MenuNotificacoes = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmi_Restaurar = new System.Windows.Forms.ToolStripMenuItem();
@@ -168,7 +169,8 @@
             this.tabControlToolStripMenuItem,
             this.toolStripMenuItem6,
             this.toolStripMenuItem7,
-            this.toolStripMenuItem8});
+            this.toolStripMenuItem8,
+            this.toolStripMenuItem9});
             this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.componentesToolStripMenuItem.Text = "Componentes";
@@ -320,11 +322,18 @@
             this.toolStripMenuItem8.Text = "BackgroundWorker";
             this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem9.Text = "Timer";
+            this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click);
+            // 
             // notifyIcon1
             // 
             this.notifyIcon1.ContextMenuStrip = this.MenuNotificacoes;
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "Aulas 62 até 82 - 90 até 97";
+            this.notifyIcon1.Text = "Aulas 62 até 82 - 90 até 98";
             this.notifyIcon1.Visible = true;
             // 
             // MenuNotificacoes
@@ -372,7 +381,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Aulas 62 até 82 - 90 até 97";
+            this.Text = "Aulas 62 até 82 - 90 até 98";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.MenuNotificacoes.ResumeLayout(false);
@@ -418,6 +427,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
     }
 }
 

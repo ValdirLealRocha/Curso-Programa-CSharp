@@ -227,5 +227,12 @@ namespace Aula062
             frm_BackgroundWorker frmBackgroundWorker = new frm_BackgroundWorker();
             frmBackgroundWorker.ShowDialog();
         }
+
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_Timer via menu
+            frm_Timer frmTimer = new frm_Timer();
+            frmTimer.ShowDialog();
+        }
     }
 }
