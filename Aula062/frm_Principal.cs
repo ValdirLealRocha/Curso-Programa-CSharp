@@ -220,5 +220,12 @@ namespace Aula062
             frm_ToolStripContainer frmToolStripContainer = new frm_ToolStripContainer();
             frmToolStripContainer.ShowDialog();
         }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_BackgroundWorker via menu
+            frm_BackgroundWorker frmBackgroundWorker = new frm_BackgroundWorker();
+            frmBackgroundWorker.ShowDialog();
+        }
     }
 }

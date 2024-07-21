@@ -243,7 +243,8 @@ Aula 095    - TableLayoutPanel
 
 Aula 096    - ToolStripContainer
 
-Aula 097    - 
+Aula 097    - Componente Backgroundworker
+
 Aula 098    - 
 Aula 099    - 
 Aula 100    - 
