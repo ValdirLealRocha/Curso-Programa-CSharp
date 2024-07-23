@@ -66,7 +66,8 @@
             this.tsmi_Restaurar = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_Mensagem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_Fechar = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_SQLite = new System.Windows.Forms.ToolStripMenuItem();
+            this.sQLiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sQLiteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.MenuNotificacoes.SuspendLayout();
             this.SuspendLayout();
@@ -140,7 +141,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.componentesToolStripMenuItem});
+            this.componentesToolStripMenuItem,
+            this.sQLiteToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(273, 24);
@@ -171,8 +173,7 @@
             this.toolStripMenuItem6,
             this.toolStripMenuItem7,
             this.toolStripMenuItem8,
-            this.toolStripMenuItem9,
-            this.toolStripMenuItem_SQLite});
+            this.toolStripMenuItem9});
             this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.componentesToolStripMenuItem.Text = "Componentes";
@@ -335,7 +336,7 @@
             // 
             this.notifyIcon1.ContextMenuStrip = this.MenuNotificacoes;
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "Aulas 62 até 82 - 90 até 98";
+            this.notifyIcon1.Text = "Aulas 62 até 82 - 90 até 99";
             this.notifyIcon1.Visible = true;
             // 
             // MenuNotificacoes
@@ -366,12 +367,20 @@
             this.tsmi_Fechar.Size = new System.Drawing.Size(133, 22);
             this.tsmi_Fechar.Text = "Fechar";
             // 
-            // toolStripMenuItem_SQLite
+            // sQLiteToolStripMenuItem
             // 
-            this.toolStripMenuItem_SQLite.Name = "toolStripMenuItem_SQLite";
-            this.toolStripMenuItem_SQLite.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem_SQLite.Text = "SQLite";
-            this.toolStripMenuItem_SQLite.Click += new System.EventHandler(this.toolStripMenuItem_SQLite_Click);
+            this.sQLiteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sQLiteToolStripMenuItem1});
+            this.sQLiteToolStripMenuItem.Name = "sQLiteToolStripMenuItem";
+            this.sQLiteToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.sQLiteToolStripMenuItem.Text = "SQLite";
+            // 
+            // sQLiteToolStripMenuItem1
+            // 
+            this.sQLiteToolStripMenuItem1.Name = "sQLiteToolStripMenuItem1";
+            this.sQLiteToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.sQLiteToolStripMenuItem1.Text = "SQLite";
+            this.sQLiteToolStripMenuItem1.Click += new System.EventHandler(this.sQLiteToolStripMenuItem1_Click);
             // 
             // frm_Principal
             // 
@@ -390,7 +399,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Aulas 62 até 82 - 90 até 98";
+            this.Text = "Aulas 62 até 82 - 90 até 99";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.MenuNotificacoes.ResumeLayout(false);
@@ -437,7 +446,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_SQLite;
+        private System.Windows.Forms.ToolStripMenuItem sQLiteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sQLiteToolStripMenuItem1;
     }
 }
 

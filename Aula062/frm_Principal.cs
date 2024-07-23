@@ -235,7 +235,7 @@ namespace Aula062
             frmTimer.ShowDialog();
         }
 
-        private void toolStripMenuItem_SQLite_Click(object sender, EventArgs e)
+        private void sQLiteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             // abre o formulário frm_SQLite via menu
             frm_SQLite frmSQLite = new frm_SQLite();

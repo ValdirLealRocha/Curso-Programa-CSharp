@@ -249,7 +249,8 @@ Aula 098    - Componente TIMER
 
 Aula 099    - Adicionando SQLite ao seu projeto
 
-Aula 100    - 
+Aula 100    - SQLite, criando banco de dados e tabelas
+
 Aula 101    - 
 Aula 102    - 
 Aula 103    - 
