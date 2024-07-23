@@ -27,7 +27,7 @@ namespace CFB_Academia
         }
 
         // método ObterTodosUsuarios()
-        private static DataTable ObterTodosUsuarios() 
+        public static DataTable ObterTodosUsuarios() 
         {
             // cria uma instância nula do data adapter
             SQLiteDataAdapter da = null;
@@ -50,12 +50,59 @@ namespace CFB_Academia
                     // preencher o data table com os dados do banco de dados
                     da.Fill(dt);
 
+                    // fecha conexão
+                    ConexaoBanco().Close();
+
                     // retorna um data table - tabela de todos os usuários
                     return dt;
                 }
             }
             catch (Exception ex)
             {
+                // fecha conexão
+                ConexaoBanco().Close();
+
+                // controle de erro...
+                throw ex;
+            }
+        }
+
+        // método genérico para consulta de dados...
+        public static DataTable ConsultaGenerica(string sql) 
+        {
+            // cria uma instância nula do data adapter
+            SQLiteDataAdapter da = null;
+
+            // cria uma instância do data table
+            DataTable dt = new DataTable();
+
+            // validação de erros...
+            try
+            {
+                // executa um bloco de comandos e garante a limpeza da memória ao finalizar processos...
+                using (var cmd = ConexaoBanco().CreateCommand())
+                {
+                    // seleciona todos os usuários...
+                    cmd.CommandText = sql;
+
+                    // o data adapter irá executar o comando e a conexão no banco de dados
+                    da = new SQLiteDataAdapter(cmd.CommandText, ConexaoBanco());
+
+                    // preencher o data table com os dados do banco de dados
+                    da.Fill(dt);
+
+                    // fecha conexão
+                    ConexaoBanco().Close();
+
+                    // retorna um data table - tabela de todos os usuários
+                    return dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                // fecha conexão
+                ConexaoBanco().Close();
+
                 // controle de erro...
                 throw ex;
             }

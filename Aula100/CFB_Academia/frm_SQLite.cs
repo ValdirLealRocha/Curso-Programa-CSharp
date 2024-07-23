@@ -20,5 +20,22 @@ namespace CFB_Academia
             frm_Login frmLogin = new frm_Login(this); // manipula o construtor e passo o form atual frm_SQLite
             frmLogin.ShowDialog();
         }
+
+        private void logOnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // abre o fomulário de 
+            frm_Login frmLogin = new frm_Login(this);
+            frmLogin.ShowDialog();
+        }
+
+        private void logOffToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // define os valores padrão...
+            lbl_Acesso.Text = "0";
+            lbl_Usuario.Text = "...";
+            pcb_LedLogado.Image = Properties.Resources.led_vermelho;
+            class_Global.nivel = 0;
+            class_Global.logado = false;
+        }
     }
 }
