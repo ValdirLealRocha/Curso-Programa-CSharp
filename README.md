@@ -251,7 +251,8 @@ Aula 099    - Adicionando SQLite ao seu projeto
 
 Aula 100    - SQLite, criando banco de dados e tabelas
 
-Aula 101    - 
+Aula 101    - Classe para as funções do Banco de Dados
+
 Aula 102    - 
 Aula 103    - 
 Aula 104    - 
