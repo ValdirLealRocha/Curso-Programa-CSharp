@@ -66,6 +66,7 @@
             this.tsmi_Restaurar = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_Mensagem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_Fechar = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem_SQLite = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.MenuNotificacoes.SuspendLayout();
             this.SuspendLayout();
@@ -170,7 +171,8 @@
             this.toolStripMenuItem6,
             this.toolStripMenuItem7,
             this.toolStripMenuItem8,
-            this.toolStripMenuItem9});
+            this.toolStripMenuItem9,
+            this.toolStripMenuItem_SQLite});
             this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.componentesToolStripMenuItem.Text = "Componentes";
@@ -364,6 +366,13 @@
             this.tsmi_Fechar.Size = new System.Drawing.Size(133, 22);
             this.tsmi_Fechar.Text = "Fechar";
             // 
+            // toolStripMenuItem_SQLite
+            // 
+            this.toolStripMenuItem_SQLite.Name = "toolStripMenuItem_SQLite";
+            this.toolStripMenuItem_SQLite.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem_SQLite.Text = "SQLite";
+            this.toolStripMenuItem_SQLite.Click += new System.EventHandler(this.toolStripMenuItem_SQLite_Click);
+            // 
             // frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -428,6 +437,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_SQLite;
     }
 }
 

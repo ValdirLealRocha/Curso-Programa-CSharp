@@ -234,5 +234,12 @@ namespace Aula062
             frm_Timer frmTimer = new frm_Timer();
             frmTimer.ShowDialog();
         }
+
+        private void toolStripMenuItem_SQLite_Click(object sender, EventArgs e)
+        {
+            // abre o formulário frm_SQLite via menu
+            frm_SQLite frmSQLite = new frm_SQLite();
+            frmSQLite.ShowDialog();
+        }
     }
 }
