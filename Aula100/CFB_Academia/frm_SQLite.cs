@@ -15,6 +15,10 @@ namespace CFB_Academia
         public frm_SQLite()
         {
             InitializeComponent();
+
+            // chama o formulário frm_Login
+            frm_Login frmLogin = new frm_Login(this); // manipula o construtor e passo o form atual frm_SQLite
+            frmLogin.ShowDialog();
         }
     }
 }

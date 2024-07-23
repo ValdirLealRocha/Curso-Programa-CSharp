@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbl_Acesso = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lbl_Usuario = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_Acesso = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pcb_LedLogado = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_LedLogado)).BeginInit();
@@ -52,23 +52,14 @@
             this.panel1.Size = new System.Drawing.Size(800, 26);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // lbl_Usuario
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Acesso:";
-            // 
-            // lbl_Acesso
-            // 
-            this.lbl_Acesso.AutoSize = true;
-            this.lbl_Acesso.Location = new System.Drawing.Point(70, 7);
-            this.lbl_Acesso.Name = "lbl_Acesso";
-            this.lbl_Acesso.Size = new System.Drawing.Size(13, 13);
-            this.lbl_Acesso.TabIndex = 2;
-            this.lbl_Acesso.Text = "0";
+            this.lbl_Usuario.AutoSize = true;
+            this.lbl_Usuario.Location = new System.Drawing.Point(134, 7);
+            this.lbl_Usuario.Name = "lbl_Usuario";
+            this.lbl_Usuario.Size = new System.Drawing.Size(16, 13);
+            this.lbl_Usuario.TabIndex = 4;
+            this.lbl_Usuario.Text = "...";
             // 
             // label2
             // 
@@ -79,14 +70,23 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Usuário:";
             // 
-            // lbl_Usuario
+            // lbl_Acesso
             // 
-            this.lbl_Usuario.AutoSize = true;
-            this.lbl_Usuario.Location = new System.Drawing.Point(134, 7);
-            this.lbl_Usuario.Name = "lbl_Usuario";
-            this.lbl_Usuario.Size = new System.Drawing.Size(16, 13);
-            this.lbl_Usuario.TabIndex = 4;
-            this.lbl_Usuario.Text = "...";
+            this.lbl_Acesso.AutoSize = true;
+            this.lbl_Acesso.Location = new System.Drawing.Point(70, 7);
+            this.lbl_Acesso.Name = "lbl_Acesso";
+            this.lbl_Acesso.Size = new System.Drawing.Size(13, 13);
+            this.lbl_Acesso.TabIndex = 2;
+            this.lbl_Acesso.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(30, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Acesso:";
             // 
             // pcb_LedLogado
             // 
@@ -108,7 +108,7 @@
             this.MinimizeBox = false;
             this.Name = "frm_SQLite";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SQLite | Academia v1.0";
+            this.Text = "SQLite | Academia v1.0 | Aula 100 até 102";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_LedLogado)).EndInit();
