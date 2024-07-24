@@ -249,7 +249,7 @@ Aula 098    - Componente TIMER
 
 Aula 099    - Adicionando SQLite ao seu projeto
 
-## Aulas 100 até 103 foram codificadas no Visual Studio 2022
+## Aulas 100 até 105 foram codificadas no Visual Studio 2022
 ### ( Pasta Aula100\\CFB_Academia - Continuação no Projeto: CFB_Academia.sln )
 
 Aula 100    - SQLite, criando banco de dados e tabelas
@@ -262,8 +262,10 @@ Aula 103    - Formulário de Login P2
 
 Aula 104    - Restringindo o acesso aos menus do seu programa
 
-Aula 105    - 
-Aula 106    - 
+Aula 105    - Tela de cadastro de usuários #p1
+
+Aula 106    - Tela de cadastro de usuários #p2
+
 Aula 107    - 
 Aula 108    - 
 Aula 109    - 

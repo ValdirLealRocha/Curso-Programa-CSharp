@@ -51,6 +51,7 @@
             this.txt_UserName.Name = "txt_UserName";
             this.txt_UserName.Size = new System.Drawing.Size(165, 20);
             this.txt_UserName.TabIndex = 1;
+            this.txt_UserName.Text = "admin";
             // 
             // lbl_Senha
             // 
@@ -68,6 +69,7 @@
             this.txt_Senha.PasswordChar = '*';
             this.txt_Senha.Size = new System.Drawing.Size(165, 20);
             this.txt_Senha.TabIndex = 3;
+            this.txt_Senha.Text = "admin";
             // 
             // btn_Logar
             // 
