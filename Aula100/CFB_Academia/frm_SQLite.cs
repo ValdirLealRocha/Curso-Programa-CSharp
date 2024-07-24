@@ -85,7 +85,8 @@ namespace CFB_Academia
                 if (class_Global.nivel >= 1) // 0 Básico, 1 Gerente, 2 Master
                 {
                     // autorizado o uso do sistema...
-
+                    frm_GestaoUsuarios frmGestaoUsuarios = new frm_GestaoUsuarios();
+                    frmGestaoUsuarios.ShowDialog();
                 }
                 else
                 {
