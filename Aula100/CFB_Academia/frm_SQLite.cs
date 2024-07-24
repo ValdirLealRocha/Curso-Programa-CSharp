@@ -37,5 +37,88 @@ namespace CFB_Academia
             class_Global.nivel = 0;
             class_Global.logado = false;
         }
+
+        private void novoAlunoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // valida usuário
+            if (class_Global.logado)
+            {
+                // autorizado o uso do sistema...
+
+            }
+            else
+            {
+                MessageBox.Show("É Necessário Ter um Usuário Logado");
+            }
+        }
+
+        private void novoUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // valida usuário
+            if (class_Global.logado)
+            {
+                // valida nível de acesso...
+                if (class_Global.nivel >= 1) // 0 Básico, 1 Gerente, 2 Master
+                {
+                    // autorizado o uso do sistema...
+
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido, consulte seu Administrador do Sistema!");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("É Necessário Ter um Usuário Logado");
+            }
+        }
+
+        private void gestãoDeUsuáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // valida usuário
+            if (class_Global.logado)
+            {
+                // valida nível de acesso...
+                if (class_Global.nivel >= 1) // 0 Básico, 1 Gerente, 2 Master
+                {
+                    // autorizado o uso do sistema...
+
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido, consulte seu Administrador do Sistema!");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("É Necessário Ter um Usuário Logado");
+            }
+        }
+
+        private void bancoDeDadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // valida usuário
+            if (class_Global.logado)
+            {
+                // valida nível de acesso...
+                if (class_Global.nivel >= 2) // 0 Básico, 1 Gerente, 2 Master
+                {
+                    // autorizado o uso do sistema...
+
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido, consulte seu Administrador do Sistema!");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("É Necessário Ter um Usuário Logado");
+            }
+        }
     }
 }
