@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SQLite;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace CFB_Academia
 {
@@ -163,6 +164,70 @@ namespace CFB_Academia
 
                     // retorna um data table - tabela de todos os usuários
                     return dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                // controle de erro...
+                throw;
+            }
+        }
+
+        // método AtualizarUsuario()
+        public static void AtualizarUsuario(class_Usuario classUsuario)
+        {
+            // cria uma instância nula do data adapter
+            SQLiteDataAdapter da = null;
+
+            // cria uma instância do data table
+            DataTable dt = new DataTable();
+
+            // validação de erros...
+            try
+            {
+                // executa um bloco de comandos e garante a limpeza da memória ao finalizar processos...
+                using (var cmd = ConexaoBanco().CreateCommand())
+                {
+                    // seleciona todos os usuários...
+                    cmd.CommandText = "UPDATE tb_usuarios SET t_nomeusuario='" + classUsuario.P_t_nomeusuario + "', t_username='" + classUsuario.P_t_username + "', t_senhausuario='" + classUsuario.P_t_senhausuario + "', t_statususuario='" + classUsuario.P_t_statususuario + "', n_nivelusuario=" + classUsuario.P_n_nivelusuario + " WHERE n_idusuario=" + classUsuario.P_n_idusuario;
+
+                    // o data adapter irá executar o comando e a conexão no banco de dados
+                    da = new SQLiteDataAdapter(cmd.CommandText, ConexaoBanco());
+
+                    // executar qyery
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                // controle de erro...
+                throw;
+            }
+        }
+
+        // método ExcluirUsuario()
+        public static void ExcluirUsuario(string id)
+        {
+            // cria uma instância nula do data adapter
+            SQLiteDataAdapter da = null;
+
+            // cria uma instância do data table
+            DataTable dt = new DataTable();
+
+            // validação de erros...
+            try
+            {
+                // executa um bloco de comandos e garante a limpeza da memória ao finalizar processos...
+                using (var cmd = ConexaoBanco().CreateCommand())
+                {
+                    // seleciona todos os usuários...
+                    cmd.CommandText = "DELETE FROM tb_usuarios WHERE n_idusuario=" + id;
+
+                    // o data adapter irá executar o comando e a conexão no banco de dados
+                    da = new SQLiteDataAdapter(cmd.CommandText, ConexaoBanco());
+
+                    // executar qyery
+                    cmd.ExecuteNonQuery();
                 }
             }
             catch (Exception ex)
