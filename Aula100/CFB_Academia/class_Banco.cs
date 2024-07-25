@@ -51,20 +51,14 @@ namespace CFB_Academia
                     // preencher o data table com os dados do banco de dados
                     da.Fill(dt);
 
-                    // fecha conexão
-                    ConexaoBanco().Close();
-
                     // retorna um data table - tabela de todos os usuários
                     return dt;
                 }
             }
             catch (Exception ex)
             {
-                // fecha conexão
-                ConexaoBanco().Close();
-
                 // controle de erro...
-                throw ex;
+                throw;
             }
         }
 
@@ -92,8 +86,41 @@ namespace CFB_Academia
                     // preencher o data table com os dados do banco de dados
                     da.Fill(dt);
 
-                    // fecha conexão
-                    ConexaoBanco().Close();
+                    // retorna um data table - tabela de todos os usuários
+                    return dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                // controle de erro...
+                throw;
+            }
+        }
+
+        // métodos do Formulário frm_GestaUsuarios
+        // método ObterTodosUsuarios()
+        public static DataTable ObterUsuariosIdNome()
+        {
+            // cria uma instância nula do data adapter
+            SQLiteDataAdapter da = null;
+
+            // cria uma instância do data table
+            DataTable dt = new DataTable();
+
+            // validação de erros...
+            try
+            {
+                // executa um bloco de comandos e garante a limpeza da memória ao finalizar processos...
+                using (var cmd = ConexaoBanco().CreateCommand())
+                {
+                    // seleciona todos os usuários...
+                    cmd.CommandText = "SELECT n_idusuario AS 'ID Usuário', t_nomeusuario AS 'Nome Usuário' FROM tb_usuarios";
+
+                    // o data adapter irá executar o comando e a conexão no banco de dados
+                    da = new SQLiteDataAdapter(cmd.CommandText, ConexaoBanco());
+
+                    // preencher o data table com os dados do banco de dados
+                    da.Fill(dt);
 
                     // retorna um data table - tabela de todos os usuários
                     return dt;
@@ -101,17 +128,52 @@ namespace CFB_Academia
             }
             catch (Exception ex)
             {
-                // fecha conexão
-                ConexaoBanco().Close();
-
                 // controle de erro...
-                throw ex;
+                throw;
             }
         }
 
-        // métodos do Formulário frm_NovoUsuario
+        // método ObterDadosUsuario()
+        public static DataTable ObterDadosUsuario(string nid)
+        {
+            // cria uma instância nula do data adapter
+            SQLiteDataAdapter da = null;
 
-        // método
+            // cria uma instância do data table
+            DataTable dt = new DataTable();
+
+            // validação de erros...
+            try
+            {
+                // executa um bloco de comandos e garante a limpeza da memória ao finalizar processos...
+                using (var cmd = ConexaoBanco().CreateCommand())
+                {
+                    // seleciona todos os usuários...
+                    //cmd.CommandText = "SELECT n_idusuario, t_nomeusuario, t_username, t_senhausuario, t_statususuario, n_nivelusuario FROM tb_usuarios WHERE n_idusuario=@idusuario";
+                    cmd.CommandText = "SELECT n_idusuario, t_nomeusuario, t_username, t_senhausuario, t_statususuario, n_nivelusuario FROM tb_usuarios WHERE n_idusuario=" + nid;
+
+                    // parametros
+                    //cmd.Parameters.AddWithValue("@idusuario", nid);
+                    
+                    // o data adapter irá executar o comando e a conexão no banco de dados
+                    da = new SQLiteDataAdapter(cmd.CommandText, ConexaoBanco());
+
+                    // preencher o data table com os dados do banco de dados
+                    da.Fill(dt);
+
+                    // retorna um data table - tabela de todos os usuários
+                    return dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                // controle de erro...
+                throw;
+            }
+        }
+        // FIM dos métodos do Formulário frm_GestaUsuarios
+
+        // métodos do Formulário frm_NovoUsuario
         public static void NovoUsuario(class_Usuario usuario)
         {
             // valida se existe usuário (UserName)...
@@ -144,22 +206,15 @@ namespace CFB_Academia
                         
                         // mostra mensagem pro usuário...
                         MessageBox.Show("Novo Usuário Inserido com Sucesso!");
-                        
-                        // descarrega objeto
-                        ConexaoBanco().Close();
                     }
                 }
                 catch (Exception ex)
                 {
                     // mostra mensagem pro usuário...
                     MessageBox.Show("ERRO ao Inserir Novo Usuário!");
-
-                    // descarrega objeto
-                    ConexaoBanco().Close();
                 }
             }
         }
-
         // FIM dos métodos do Formulário frm_NovoUsuario
 
         // ROTINAS GERAIS
@@ -199,20 +254,14 @@ namespace CFB_Academia
                         res = false;
                     }
 
-                    // fecha conexão
-                    ConexaoBanco().Close();
-
                     // retorna um data table - tabela de todos os usuários
                     return res;
                 }
             }
             catch (Exception ex)
             {
-                // fecha conexão
-                ConexaoBanco().Close();
-
                 // controle de erro...
-                throw ex;
+                throw;
             }
         }
     }
