@@ -15,12 +15,17 @@ namespace CFB_Academia
         // propriedades
         private static SQLiteConnection conexao;
 
+        // ****************
+        // Funções GENÉRICA
+        // ****************
+
         // método ConexaoBanco()
         private static SQLiteConnection ConexaoBanco()
         {
             // cria uma instância do objeto sqlite o caminho do banco de dados
-            conexao = new SQLiteConnection("Data Source=D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula100\\CFB_Academia\\DataBase\\banco_Academia.db");
-            
+            //conexao = new SQLiteConnection("Data Source=D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula100\\CFB_Academia\\DataBase\\banco_Academia.db");
+            conexao = new SQLiteConnection("Data Source=" + class_Global.caminhoBancoDados + class_Global.nomeBancoDados);
+
             // abre a conexão com o banco de dados
             conexao.Open();
             
@@ -28,8 +33,9 @@ namespace CFB_Academia
             return conexao;
         }
 
-        // método ObterTodosUsuarios()
-        public static DataTable ObterTodosUsuarios() 
+        // método genérico para consulta de dados...
+        // Data Query Language
+        public static DataTable DQL_ConsultaGenerica(string sql)
         {
             // cria uma instância nula do data adapter
             SQLiteDataAdapter da = null;
@@ -44,7 +50,7 @@ namespace CFB_Academia
                 using (var cmd = ConexaoBanco().CreateCommand())
                 {
                     // seleciona todos os usuários...
-                    cmd.CommandText = "SELECT FROM * tb_usuarios";
+                    cmd.CommandText = sql;
 
                     // o data adapter irá executar o comando e a conexão no banco de dados
                     da = new SQLiteDataAdapter(cmd.CommandText, ConexaoBanco());
@@ -64,7 +70,8 @@ namespace CFB_Academia
         }
 
         // método genérico para consulta de dados...
-        public static DataTable ConsultaGenerica(string sql) 
+        // Data Manipulation Language (insert, delete e update)
+        public static void DML_ConsultaGenerica(string q, string msgOK = null, string msgERRO = null)
         {
             // cria uma instância nula do data adapter
             SQLiteDataAdapter da = null;
@@ -79,7 +86,53 @@ namespace CFB_Academia
                 using (var cmd = ConexaoBanco().CreateCommand())
                 {
                     // seleciona todos os usuários...
-                    cmd.CommandText = sql;
+                    cmd.CommandText = q;
+
+                    // o data adapter irá executar o comando e a conexão no banco de dados
+                    da = new SQLiteDataAdapter(cmd.CommandText, ConexaoBanco());
+
+                    // executar qyery
+                    cmd.ExecuteNonQuery();
+
+                    // valida msgOK
+                    if (msgOK != null)
+                    {
+                        // mostra msgOK
+                        MessageBox.Show(msgOK);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                // valida msgERRO
+                if (msgERRO != null)
+                {
+                    // mostra msgERRO
+                    MessageBox.Show(msgERRO + "\n" + ex.Message);
+                }
+                // controle de erro...
+                throw;
+            }
+        }
+
+        // método ObterTodosUsuarios()
+        public static DataTable ObterTodosUsuarios() 
+        {
+            // cria uma instância nula do data adapter
+            SQLiteDataAdapter da = null;
+
+            // cria uma instância do data table
+            DataTable dt = new DataTable();
+
+            // validação de erros...
+            try
+            {
+                // executa um bloco de comandos e garante a limpeza da memória ao finalizar processos...
+                using (var cmd = ConexaoBanco().CreateCommand())
+                {
+                    // seleciona todos os usuários...
+                    cmd.CommandText = "SELECT FROM * tb_usuarios";
 
                     // o data adapter irá executar o comando e a conexão no banco de dados
                     da = new SQLiteDataAdapter(cmd.CommandText, ConexaoBanco());

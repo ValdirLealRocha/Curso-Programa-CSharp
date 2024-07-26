@@ -51,7 +51,7 @@ namespace CFB_Academia
             string sql = "SELECT * FROM tb_usuarios WHERE t_username = '" + username + "' AND t_senhausuario = '" + username + "'";
 
             // monta o data table
-            dt = class_Banco.ConsultaGenerica(sql);
+            dt = class_Banco.DQL_ConsultaGenerica(sql);
 
             // valida se tem dados
             if (dt.Rows.Count == 1)

@@ -13,5 +13,12 @@ namespace CFB_Academia
         public static Boolean logado = false;
         // 0 Básico, 1 Gerente, 2 Master
         public static int nivel = 0;
+        //public static string caminho = System.AppDomain.CurrentDomain.BaseDirectory;
+        public static string caminhoSistema = System.Environment.CurrentDirectory;
+        //D:\ProjetosDEV\Curso-Programa-CSharp\Aula100\CFB_Academia\bin\Debug
+        public static string caminhoBancoDados = caminhoSistema + @"\DataBase\"; // ou "\\DataBase\\"
+        //D:\ProjetosDEV\Curso-Programa-CSharp\Aula100\CFB_Academia\bin\Debug\DataBase\
+        public static string nomeBancoDados = "banco_Academia.db";
+        //D:\ProjetosDEV\Curso-Programa-CSharp\Aula100\CFB_Academia\bin\Debug\DataBase\banco_Academia.db
     }
 }
