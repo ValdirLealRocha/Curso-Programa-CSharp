@@ -21,6 +21,30 @@ namespace CFB_Academia
             frmLogin.ShowDialog();
         }
 
+        // 
+        private void AbreForm(int nivel, Form frm)
+        {
+            // valida usuário
+            if (class_Global.logado)
+            {
+                // valida nível de acesso...
+                if (class_Global.nivel >= nivel) // 0 Básico, 1 Gerente, 2 Master
+                {
+                    // autorizado o uso do sistema...
+                    frm.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido, consulte seu Administrador do Sistema!");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("É Necessário Ter um Usuário Logado");
+            }
+        }
+
         private void logOnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // abre o fomulário de 
@@ -40,87 +64,31 @@ namespace CFB_Academia
 
         private void novoAlunoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // valida usuário
-            if (class_Global.logado)
-            {
-                // autorizado o uso do sistema...
-
-            }
-            else
-            {
-                MessageBox.Show("É Necessário Ter um Usuário Logado");
-            }
         }
 
         private void novoUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // valida usuário
-            if (class_Global.logado)
-            {
-                // valida nível de acesso...
-                if (class_Global.nivel >= 1) // 0 Básico, 1 Gerente, 2 Master
-                {
-                    // autorizado o uso do sistema...
-                    frm_NovoUsuario frmNovoUsuario = new frm_NovoUsuario();
-                    frmNovoUsuario.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Acesso não permitido, consulte seu Administrador do Sistema!");
-                }
-
-            }
-            else
-            {
-                MessageBox.Show("É Necessário Ter um Usuário Logado");
-            }
+            // valida e abre form
+            frm_NovoUsuario frmNovoUsuario = new frm_NovoUsuario();
+            AbreForm(1, frmNovoUsuario);
         }
 
         private void gestãoDeUsuáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // valida usuário
-            if (class_Global.logado)
-            {
-                // valida nível de acesso...
-                if (class_Global.nivel >= 1) // 0 Básico, 1 Gerente, 2 Master
-                {
-                    // autorizado o uso do sistema...
-                    frm_GestaoUsuarios frmGestaoUsuarios = new frm_GestaoUsuarios();
-                    frmGestaoUsuarios.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Acesso não permitido, consulte seu Administrador do Sistema!");
-                }
-
-            }
-            else
-            {
-                MessageBox.Show("É Necessário Ter um Usuário Logado");
-            }
+            // valida e abre form
+            frm_GestaoUsuarios frmGestaoUsuarios = new frm_GestaoUsuarios();
+            AbreForm(1, frmGestaoUsuarios);
         }
 
         private void bancoDeDadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // valida usuário
-            if (class_Global.logado)
-            {
-                // valida nível de acesso...
-                if (class_Global.nivel >= 2) // 0 Básico, 1 Gerente, 2 Master
-                {
-                    // autorizado o uso do sistema...
+        }
 
-                }
-                else
-                {
-                    MessageBox.Show("Acesso não permitido, consulte seu Administrador do Sistema!");
-                }
-
-            }
-            else
-            {
-                MessageBox.Show("É Necessário Ter um Usuário Logado");
-            }
+        private void horáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // valida e abre form
+            frm_Horario frmHorario = new frm_Horario();
+            AbreForm(2, frmHorario);
         }
     }
 }

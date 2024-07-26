@@ -249,7 +249,7 @@ Aula 098    - Componente TIMER
 
 Aula 099    - Adicionando SQLite ao seu projeto
 
-## Aulas 100 até 111 foram codificadas no Visual Studio 2022
+## Aulas 100 até 112 foram codificadas no Visual Studio 2022
 ### ( Pasta Aula100\\CFB_Academia - Continuação no Projeto: CFB_Academia.sln )
 
 Aula 100    - SQLite, criando banco de dados e tabelas
@@ -276,7 +276,8 @@ Aula 110    - Aprendendo sobre inner join e case when - SQLite
 
 Aula 111    - Path do bd relativo, funções dml e dql
 
-Aula 112    - 
+Aula 112    - Construção completa do formulário horários
+
 Aula 113    - 
 Aula 114    - 
 Aula 115    - 

@@ -71,7 +71,7 @@ namespace CFB_Academia
 
         // método genérico para consulta de dados...
         // Data Manipulation Language (insert, delete e update)
-        public static void DML_ConsultaGenerica(string q, string msgOK = null, string msgERRO = null)
+        public static void DML_CrudGenerico(string q, string msgOK = null, string msgERRO = null)
         {
             // cria uma instância nula do data adapter
             SQLiteDataAdapter da = null;
