@@ -87,8 +87,15 @@ namespace CFB_Academia
         private void horáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // valida e abre form
-            frm_Horario frmHorario = new frm_Horario();
+            frm_GestaoHorario frmHorario = new frm_GestaoHorario();
             AbreForm(2, frmHorario);
+        }
+
+        private void professoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // valida e abre form
+            frm_GestaoProfessores frmGestaoProfessores = new frm_GestaoProfessores();
+            AbreForm(2, frmGestaoProfessores);
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace CFB_Academia
 {
-    partial class frm_Horario
+    partial class frm_GestaoHorario
     {
         /// <summary>
         /// Required designer variable.

@@ -11,9 +11,9 @@ using static System.Data.Entity.Infrastructure.Design.Executor;
 
 namespace CFB_Academia
 {
-    public partial class frm_Horario : Form
+    public partial class frm_GestaoHorario : Form
     {
-        public frm_Horario()
+        public frm_GestaoHorario()
         {
             InitializeComponent();
         }
@@ -37,7 +37,7 @@ namespace CFB_Academia
                 // INSERT
                 vquery = @"
                 INSERT INTO 
-                    tb_horarios
+                    tb_professores
                     (t_descricaohorario)
                     VALUES
                     ('" + txt_DescricaoHorario.Text + "')";
@@ -47,7 +47,7 @@ namespace CFB_Academia
                 // UPDATE
                 vquery = @"
                     UPDATE 
-                        tb_horarios 
+                        tb_professores 
                     SET t_descricaohorario = '" + txt_DescricaoHorario.Text + "' " +
                     "WHERE n_idhorario = " + txt_IDHorario.Text;
             }
@@ -62,7 +62,7 @@ namespace CFB_Academia
                     n_idhorario AS 'ID Horário', 
                     t_descricaohorario AS 'Desc. Horário'
                 FROM
-                    tb_horarios
+                    tb_professores
                 ORDER BY
                     t_descricaohorario
             ";
@@ -78,7 +78,7 @@ namespace CFB_Academia
                 // declara/define variáveis
                 string vquery = @"
                     DELETE FROM
-                        tb_horarios
+                        tb_professores
                     WHERE
                         n_idhorario=" + txt_IDHorario.Text;
 
@@ -93,7 +93,7 @@ namespace CFB_Academia
                         n_idhorario AS 'ID Horário', 
                         t_descricaohorario AS 'Desc. Horário'
                     FROM
-                        tb_horarios
+                        tb_professores
                     ORDER BY
                         t_descricaohorario
                 ";
@@ -102,8 +102,8 @@ namespace CFB_Academia
 
                 // EXCLUIR a linha do Grid...
                 dgv_Horarios.Rows.Remove(dgv_Horarios.CurrentRow);
-                txt_IDHorario.Clear();
-                txt_DescricaoHorario.Clear();
+                //txt_IDHorario.Clear();
+                //txt_DescricaoHorario.Clear();
             }
         }
 
@@ -121,7 +121,7 @@ namespace CFB_Academia
                     n_idhorario AS 'ID Horário', 
                     t_descricaohorario AS 'Desc. Horário'
                 FROM
-                    tb_horarios
+                    tb_professores
                 ORDER BY
                     t_descricaohorario
             ";
@@ -149,7 +149,7 @@ namespace CFB_Academia
                     SELECT
                         *
                     FROM
-                        tb_horarios
+                        tb_professores
                     WHERE
                         n_idhorario=" + vid;
                 // chama método pra executar a SQL
