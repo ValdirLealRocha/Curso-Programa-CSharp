@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Data.Entity.Infrastructure.Design.Executor;
+using iTextSharp;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace CFB_Academia
 {
@@ -167,8 +171,160 @@ namespace CFB_Academia
 
         private void btn_Imprimir_Click(object sender, EventArgs e)
         {
-            // imprimir...
+            // usuáriuo decide se imprime!
+            if (MessageBox.Show("Deseja imprimir PDF Turmas.pdf","*** IMPRIME PDF ***", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                // caminho do arquivo PDF no sistema...
+                string nomeArquivo = "";
 
+                try
+                {
+                    // imprimir... PDF
+                    //
+                    // define caminho do arquivo PDF
+                    nomeArquivo = class_Global.caminhoSistema + @"\TURMAS.pdf";
+
+                    // prepara objeto para a criação do PDF...
+                    FileStream arquivoPDF = new FileStream(nomeArquivo, FileMode.Create);
+
+                    // define o formato da página do PDF...
+                    Document doc = new Document(PageSize.A4);
+
+                    // criação física do PDF, ainda vazio, só estrutura do cabeçalho...
+                    PdfWriter escritorPDF = PdfWriter.GetInstance(doc, arquivoPDF);
+
+                    // IMAGEM no PDF
+                    // caminho da logo na pasta do sistema...
+                    iTextSharp.text.Image logo = iTextSharp.text.Image.GetInstance(class_Global.caminhoSistema + @"\logo.jpg");
+                    // define tamanho da imagem
+                    logo.ScaleToFit(140f, 120f);
+                    // alinha imagem ao centro
+                    logo.Alignment = Element.ALIGN_CENTER;
+                    // define a posição da imagem
+                    //logo.SetAbsolutePosition(100f, 700f); // X, -Y >> define manual...
+
+                    // cria variável onde os dados serão gravados em memória...
+                    string dados = "\n";
+                    // cria e formata um paragrafo, para ser inserido no arquivo...
+                    Paragraph paragrafo1 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 20, (int)System.Drawing.FontStyle.Bold));
+                    // define alinhamento ao centro...
+                    paragrafo1.Alignment = Element.ALIGN_CENTER;
+                    // adiciona texto...
+                    paragrafo1.Add("CFB Cursos\n");
+                    // cria e formata um paragrafo, para ser inserido no arquivo...
+                    paragrafo1.Font = new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 16, (int)System.Drawing.FontStyle.Italic);
+                    // adiciona texto...
+                    paragrafo1.Add("Curso de C#\n");
+                    // cria o corpo do arquivo PDF...
+                    string texto = "youtube.com/cfbcursos";
+                    // cria e formata um paragrafo, para ser inserido no arquivo...
+                    paragrafo1.Font = new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 14, (int)System.Drawing.FontStyle.Italic);
+                    // adiciona texto...
+                    paragrafo1.Add(texto + "\n");
+
+                    // ********************************************************************
+                    // ********************************************************************
+                    // ********************************************************************
+                    // CRIA RELATÓRIO COM OS DADOS DA TELA...
+                    // cria o corpo do arquivo PDF...
+                    string DadosTurmas = "";
+                    DadosTurmas =  "Turma............: " + txt_DescricaoTurma.Text + $"\r\n";
+                    DadosTurmas += "Professor(a).....: " + cmb_Professor.Text + $"\r\n";
+                    DadosTurmas += "Máximo de Alunos.: " + txt_MaximoAlunos.Text + $"\r\n";
+                    DadosTurmas += "Status...........: " + cmb_Status.Text + $"\r\n";
+                    DadosTurmas += "Horário..........: " + cmb_Horario.Text + $"\r\n";
+                    DadosTurmas += "Vagas Disponível.: " + txt_Vagas.Text + $"\r\n";
+                    // cria e formata um paragrafo, para ser inserido no arquivo...
+                    Paragraph paragrafo2 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 12, (int)System.Drawing.FontStyle.Regular));
+                    // define alinhamento ao centro...
+                    paragrafo2.Alignment = Element.ALIGN_LEFT;
+                    // adiciona texto...
+                    paragrafo2.Add($"\r\n" + DadosTurmas + $"\r\n");
+                    // ********************************************************************
+                    // ********************************************************************
+                    // ********************************************************************
+
+                    // cria e formata um paragrafo, para ser inserido no arquivo...
+                    Paragraph paragrafo3 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 20, (int)System.Drawing.FontStyle.Bold));
+                    // define alinhamento ao centro...
+                    paragrafo3.Alignment = Element.ALIGN_LEFT;
+                    // adiciona texto...
+                    texto = "Este é outro parágrafo...\n\n";
+                    // adiciona texto...
+                    paragrafo3.Add(texto);
+
+                    // ADD TABELA AO PDF... primeira tabela
+                    // define tabela com 3 colunas...
+                    PdfPTable tabela = new PdfPTable(3);
+                    // define altura da celula= 20
+                    tabela.DefaultCell.FixedHeight = 30;
+                    // define o titulo da tabela...
+                    // tira o parametro pro construtuor, pra por imagem...
+                    //PdfPCell celula = new PdfPCell(new Phrase("Tabela de Preços"));
+                    PdfPCell celula = new PdfPCell();
+                    // mesclar 3 celulas...
+                    celula.Colspan = 3;
+                    // alinhamento...
+                    celula.HorizontalAlignment = Element.ALIGN_CENTER;
+                    // alinhamento...
+                    celula.VerticalAlignment = Element.ALIGN_MIDDLE;
+                    // rotaciona o titulo...
+                    celula.Rotation = 0; // 90; // gira o texto em 90%
+                    // add imagem ao cabeçalho...
+                    celula.AddElement(logo);
+                    // adiciona celula na tabela...
+                    tabela.AddCell(celula);
+                    // define os titulos das celulas...
+                    tabela.AddCell("Código");
+                    tabela.AddCell("Produto");
+                    tabela.AddCell("Preço");
+                    // define o conteúdo das celulas
+                    tabela.AddCell("01");
+                    tabela.AddCell("Mouse");
+                    tabela.AddCell("25,00");
+                    // 
+                    tabela.AddCell("02");
+                    tabela.AddCell("Teclado");
+                    tabela.AddCell("65,00");
+
+                    // segunda tabela
+                    // define o titulo da tabela...
+                    PdfPCell celula1 = new PdfPCell(new Phrase("Tabela de Preços"));
+                    // 
+                    celula1.Rotation = 0;
+                    // mesclar 3 celulas...
+                    celula1.Colspan = 3;
+                    // altura da celula...
+                    celula1.FixedHeight = 40;
+                    // 
+                    celula1.HorizontalAlignment = Element.ALIGN_CENTER;
+                    // 
+                    celula1.VerticalAlignment = Element.ALIGN_MIDDLE;
+                    // 
+                    tabela.AddCell (celula1);
+
+                    // abre o Arquivo para iniciar gravação...
+                    doc.Open();
+                    // adiciona os paragrafos no PDF
+                    doc.Add(logo);
+                    doc.Add(paragrafo1);
+                    doc.Add(paragrafo2);
+                    doc.Add(paragrafo3);
+                    doc.Add(tabela);
+                    // fecha o arquivo...
+                    doc.Close();
+
+                    // PDF OK!
+                    MessageBox.Show($"Arquivo PDF criado com sucesso!\r\n\n" + nomeArquivo.ToUpper(), "*** FIM DA IMPRESSÃO DO PDF ***");
+                }
+                catch (Exception ex)
+                {
+                    // PDF OPEN!
+                    //MessageBox.Show(String.Format($"O Arquivo PDF Já Está Aberto!.\r\n\nSolicitamos FECHAR o arquivo e tentar nova impressão!.\r\n\n" + ex.Message.ToString()), "*** ARQUIVO ABERTO ***");
+                    MessageBox.Show(String.Format($"Arquivo PDF já ABERTO, Favor FECHAR o PDF!\r\n\n" + ex.Message.ToString().ToUpper()), "*** ARQUIVO ABERTO ***");
+                    //throw;
+                }
+            }
         }
 
         private void btn_Fechar_Click(object sender, EventArgs e)

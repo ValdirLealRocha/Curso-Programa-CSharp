@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula100\\CFB_Academia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CE32E60-61DB-454C-8069-2D55C1C18AB3}|CFB_Academia.csproj|d:\\projetosdev\\curso-programa-csharp\\aula100\\cfb_academia\\frm_gestaoturmas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CE32E60-61DB-454C-8069-2D55C1C18AB3}|CFB_Academia.csproj|solutionrelative:frm_gestaoturmas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8CE32E60-61DB-454C-8069-2D55C1C18AB3}|CFB_Academia.csproj|D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula100\\CFB_Academia\\frm_sqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8CE32E60-61DB-454C-8069-2D55C1C18AB3}|CFB_Academia.csproj|solutionrelative:frm_sqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CE32E60-61DB-454C-8069-2D55C1C18AB3}|CFB_Academia.csproj|D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula100\\CFB_Academia\\frm_gestaoturmas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8CE32E60-61DB-454C-8069-2D55C1C18AB3}|CFB_Academia.csproj|solutionrelative:frm_gestaoturmas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CE32E60-61DB-454C-8069-2D55C1C18AB3}|CFB_Academia.csproj|D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula100\\CFB_Academia\\frm_sqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8CE32E60-61DB-454C-8069-2D55C1C18AB3}|CFB_Academia.csproj|solutionrelative:frm_sqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8CE32E60-61DB-454C-8069-2D55C1C18AB3}|CFB_Academia.csproj|d:\\projetosdev\\curso-programa-csharp\\aula100\\cfb_academia\\frm_gestaoturmas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CE32E60-61DB-454C-8069-2D55C1C18AB3}|CFB_Academia.csproj|solutionrelative:frm_gestaoturmas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CE32E60-61DB-454C-8069-2D55C1C18AB3}|CFB_Academia.csproj|D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula100\\CFB_Academia\\frm_sqlite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -42,13 +42,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "frm_GestaoTurmas.cs",
               "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula100\\CFB_Academia\\frm_GestaoTurmas.cs",
               "RelativeDocumentMoniker": "frm_GestaoTurmas.cs",
               "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula100\\CFB_Academia\\frm_GestaoTurmas.cs",
               "RelativeToolTip": "frm_GestaoTurmas.cs",
-              "ViewState": "AQIAAC8BAAAAAAAAAAAmwEUBAAAAAAAA",
+              "ViewState": "AQIAABoBAAAAAAAAAAAQwC4BAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T20:10:50.061Z",
               "EditorCaption": ""
@@ -63,18 +63,20 @@
               "RelativeToolTip": "frm_SQLite.cs",
               "ViewState": "AQIAAFgAAAAAAAAAAAAuwGkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T18:52:48.277Z"
+              "WhenOpened": "2024-07-29T18:52:48.277Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "frm_SQLite.cs [Design]",
               "DocumentMoniker": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula100\\CFB_Academia\\frm_SQLite.cs",
               "RelativeDocumentMoniker": "frm_SQLite.cs",
               "ToolTip": "D:\\ProjetosDEV\\Curso-Programa-CSharp\\Aula100\\CFB_Academia\\frm_SQLite.cs [Design]",
               "RelativeToolTip": "frm_SQLite.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T18:52:37.595Z"
+              "WhenOpened": "2024-07-29T18:52:37.595Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
