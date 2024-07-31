@@ -249,7 +249,7 @@ Aula 098    - Componente TIMER
 
 Aula 099    - Adicionando SQLite ao seu projeto
 
-## Aulas 100 até 113 foram codificadas no Visual Studio 2022
+## Aulas 100 até 119 foram codificadas no Visual Studio 2022
 ### ( Pasta Aula100\\CFB_Academia - Continuação no Projeto: CFB_Academia.sln )
 
 Aula 100    - SQLite, criando banco de dados e tabelas
@@ -280,12 +280,18 @@ Aula 112    - Construção completa do formulário horários
 
 Aula 113    - Exercício, Formulário gestão de professores
 
-Aula 114    - 
-Aula 115    - 
-Aula 116    - 
-Aula 117    - 
-Aula 118    - 
-Aula 119    - 
+Aula 114    - Criação do formulário de Gestão de Turmas
+
+Aula 115    - Populando combobox com banco de dados
+
+Aula 116    - SelectionChanged do datagridview turmas com combobox
+
+Aula 117    - Programação dos botões do formulário Gestão de Turmas #p1
+
+Aula 118    - Programação dos botões do formulário Gestão de Turmas #p2
+
+Aula 119    - SQL COUNT. Calculando o número de vagas nas turmas
+
 Aula 120    - 
 Aula 121    - 
 Aula 122    - 

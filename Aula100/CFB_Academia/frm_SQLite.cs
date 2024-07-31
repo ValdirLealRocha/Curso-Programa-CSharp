@@ -97,5 +97,12 @@ namespace CFB_Academia
             frm_GestaoProfessores frmGestaoProfessores = new frm_GestaoProfessores();
             AbreForm(2, frmGestaoProfessores);
         }
+
+        private void turmasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // valida e abre form
+            frm_GestaoTurmas frmGestaoTurmas = new frm_GestaoTurmas();
+            AbreForm(2, frmGestaoTurmas);
+        }
     }
 }
