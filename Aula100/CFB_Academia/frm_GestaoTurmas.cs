@@ -180,16 +180,13 @@ namespace CFB_Academia
                 try
                 {
                     // imprimir... PDF
-                    //
+                    // ***************
                     // define caminho do arquivo PDF
                     nomeArquivo = class_Global.caminhoSistema + @"\TURMAS.pdf";
-
                     // prepara objeto para a criação do PDF...
                     FileStream arquivoPDF = new FileStream(nomeArquivo, FileMode.Create);
-
                     // define o formato da página do PDF...
                     Document doc = new Document(PageSize.A4);
-
                     // criação física do PDF, ainda vazio, só estrutura do cabeçalho...
                     PdfWriter escritorPDF = PdfWriter.GetInstance(doc, arquivoPDF);
 
@@ -282,7 +279,7 @@ namespace CFB_Academia
                     tabela.AddCell("01");
                     tabela.AddCell("Mouse");
                     tabela.AddCell("25,00");
-                    // 
+                    // define o conteúdo das celulas
                     tabela.AddCell("02");
                     tabela.AddCell("Teclado");
                     tabela.AddCell("65,00");
@@ -290,17 +287,17 @@ namespace CFB_Academia
                     // segunda tabela
                     // define o titulo da tabela...
                     PdfPCell celula1 = new PdfPCell(new Phrase("Tabela de Preços"));
-                    // 
+                    // não rotaciona a linha...
                     celula1.Rotation = 0;
                     // mesclar 3 celulas...
                     celula1.Colspan = 3;
                     // altura da celula...
                     celula1.FixedHeight = 40;
-                    // 
+                    // alinhamento horizontal...
                     celula1.HorizontalAlignment = Element.ALIGN_CENTER;
-                    // 
+                    // alinhamento vertical...
                     celula1.VerticalAlignment = Element.ALIGN_MIDDLE;
-                    // 
+                    // add celula a tabela...
                     tabela.AddCell (celula1);
 
                     // abre o Arquivo para iniciar gravação...
@@ -496,6 +493,123 @@ namespace CFB_Academia
             if (modo == 0)
             {
                 modo = 1;
+            }
+        }
+
+        private void btn_Imprimir1_Click(object sender, EventArgs e)
+        {
+            // usuáriuo decide se imprime!
+            if (MessageBox.Show("Deseja imprimir PDF REL_TURMAS", "*** IMPRIME PDF ***", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                // caminho do arquivo PDF no sistema...
+                string nomeArquivo = "";
+
+                try
+                {
+                    // imprimir... PDF
+                    // ***************
+                    // define caminho do arquivo PDF
+                    nomeArquivo = class_Global.caminhoSistema + @"\REL_TURMAS.pdf";
+                    // prepara objeto para a criação do PDF...
+                    FileStream arquivoPDF = new FileStream(nomeArquivo, FileMode.Create);
+                    // define o formato da página do PDF...
+                    Document doc = new Document(PageSize.A4);
+                    // criação física do PDF, ainda vazio, só estrutura do cabeçalho...
+                    PdfWriter escritorPDF = PdfWriter.GetInstance(doc, arquivoPDF);
+
+                    // IMAGEM no PDF
+                    // caminho da logo na pasta do sistema...
+                    iTextSharp.text.Image logo = iTextSharp.text.Image.GetInstance(class_Global.caminhoSistema + @"\logo.jpg");
+                    // define tamanho da imagem
+                    logo.ScaleToFit(140f, 120f);
+                    // alinha imagem ao centro
+                    logo.Alignment = Element.ALIGN_CENTER;
+
+                    // cria variável onde os dados serão gravados em memória...
+                    string dados = "";
+
+                    // PARAGRAFO 1
+                    // cria e formata um paragrafo, para ser inserido no arquivo...
+                    Paragraph paragrafo1 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 20, (int)System.Drawing.FontStyle.Bold));
+                    // define alinhamento ao centro...
+                    paragrafo1.Alignment = Element.ALIGN_CENTER;
+                    // adiciona texto...
+                    paragrafo1.Add("Relatório de Turmas\n\n");
+                    // cria e formata um paragrafo, para ser inserido no arquivo...
+                    paragrafo1.Font = new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 16, (int)System.Drawing.FontStyle.Italic);
+
+                    // PARAGRAFO 2
+                    // cria e formata um paragrafo, para ser inserido no arquivo...
+                    Paragraph paragrafo2 = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 20, (int)System.Drawing.FontStyle.Bold));
+                    // define alinhamento ao centro...
+                    paragrafo2.Alignment = Element.ALIGN_CENTER;
+                    // adiciona texto...
+                    paragrafo2.Add("CFB Cursos - Curso de C#\n\n");
+                    // cria e formata um paragrafo, para ser inserido no arquivo...
+                    paragrafo2.Font = new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 16, (int)System.Drawing.FontStyle.Italic);
+
+                    // ADD TABELA AO PDF...
+                    // define tabela com 3 colunas...
+                    PdfPTable tabela = new PdfPTable(3);
+                    // define altura da celula= 20
+                    tabela.DefaultCell.FixedHeight = 30;
+
+
+                    // define o cabeçalho das celulas
+                    tabela.AddCell("ID Turma");
+                    tabela.AddCell("Turma");
+                    tabela.AddCell("Horário");
+
+                    // Popular DataGridView dgv_Turmas
+                    string s_SQL = @"
+                        SELECT
+                            tbt.n_idturma AS 'ID',
+                            tbt.t_descricaoturma AS 'Turma',
+                            tbh.t_descricaohorario AS 'Horário'
+                        FROM
+                            tb_turmas AS tbt
+                        INNER JOIN
+                            tb_horarios AS tbh ON tbh.n_idhorario = tbt.n_idhorario
+                        ORDER BY
+                            n_idturma
+                    ";
+
+                    // Looping para impresão de todas as turmas na tabela...
+                    DataTable dtTurmas = class_Banco.DQL_ConsultaGenerica(s_SQL); // passar SQL...
+                    // lopping no banco de dados...
+                    for (int i = 0; i < dtTurmas.Rows.Count; i++)
+                    {
+                        // adiciona os campos as celulas da tabela...
+                        tabela.AddCell(dtTurmas.Rows[i].Field<Int64>("ID").ToString());
+                        tabela.AddCell(dtTurmas.Rows[i].Field<string>("Turma"));
+                        tabela.AddCell(dtTurmas.Rows[i].Field<string>("Horário"));
+                    }
+
+                    // abre o Arquivo para iniciar gravação...
+                    doc.Open();
+                    // adiciona a logo e os paragrafos a tabela
+                    doc.Add(logo);
+                    doc.Add(paragrafo1);
+                    doc.Add(tabela);
+                    doc.Add(paragrafo2);
+                    // fecha o arquivo...
+                    doc.Close();
+
+                    // PDF OK!
+                    // Visualizar?
+                    if (MessageBox.Show("Deseja visualizar o Relatório?", "*** VISUALIZA RELATÓRIO DE TURMAS ***", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        // abre o PDF
+                        System.Diagnostics.Process.Start(nomeArquivo);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // PDF OPEN!
+                    //MessageBox.Show(String.Format($"O Arquivo PDF Já Está Aberto!.\r\n\nSolicitamos FECHAR o arquivo e tentar nova impressão!.\r\n\n" + ex.Message.ToString()), "*** ARQUIVO ABERTO ***");
+                    MessageBox.Show(String.Format($"Arquivo PDF já ABERTO, Favor FECHAR o PDF!\r\n\n" + ex.Message.ToString().ToUpper()), "*** ARQUIVO ABERTO ***");
+                    //throw;
+                }
             }
         }
     }

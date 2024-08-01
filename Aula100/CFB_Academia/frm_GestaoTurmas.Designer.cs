@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Imprimir = new System.Windows.Forms.Button();
             this.btn_Fechar = new System.Windows.Forms.Button();
@@ -48,6 +48,7 @@
             this.txt_DescricaoTurma = new System.Windows.Forms.TextBox();
             this.txt_Vagas = new System.Windows.Forms.TextBox();
             this.lbl_Vagas = new System.Windows.Forms.Label();
+            this.btn_Imprimir1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Turmas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_MaximoAlunos)).BeginInit();
@@ -56,6 +57,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel1.Controls.Add(this.btn_Imprimir1);
             this.panel1.Controls.Add(this.btn_Imprimir);
             this.panel1.Controls.Add(this.btn_Fechar);
             this.panel1.Controls.Add(this.btn_Excluir);
@@ -70,20 +72,20 @@
             // btn_Imprimir
             // 
             this.btn_Imprimir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Imprimir.Location = new System.Drawing.Point(387, 5);
+            this.btn_Imprimir.Location = new System.Drawing.Point(345, 5);
             this.btn_Imprimir.Name = "btn_Imprimir";
-            this.btn_Imprimir.Size = new System.Drawing.Size(119, 23);
+            this.btn_Imprimir.Size = new System.Drawing.Size(105, 23);
             this.btn_Imprimir.TabIndex = 3;
-            this.btn_Imprimir.Text = "Imprimir Turma";
+            this.btn_Imprimir.Text = "Imprimir Turma X";
             this.btn_Imprimir.UseVisualStyleBackColor = true;
             this.btn_Imprimir.Click += new System.EventHandler(this.btn_Imprimir_Click);
             // 
             // btn_Fechar
             // 
             this.btn_Fechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Fechar.Location = new System.Drawing.Point(512, 5);
+            this.btn_Fechar.Location = new System.Drawing.Point(567, 5);
             this.btn_Fechar.Name = "btn_Fechar";
-            this.btn_Fechar.Size = new System.Drawing.Size(119, 23);
+            this.btn_Fechar.Size = new System.Drawing.Size(63, 23);
             this.btn_Fechar.TabIndex = 4;
             this.btn_Fechar.Text = "Fechar";
             this.btn_Fechar.UseVisualStyleBackColor = true;
@@ -92,9 +94,9 @@
             // btn_Excluir
             // 
             this.btn_Excluir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Excluir.Location = new System.Drawing.Point(262, 5);
+            this.btn_Excluir.Location = new System.Drawing.Point(234, 5);
             this.btn_Excluir.Name = "btn_Excluir";
-            this.btn_Excluir.Size = new System.Drawing.Size(119, 23);
+            this.btn_Excluir.Size = new System.Drawing.Size(105, 23);
             this.btn_Excluir.TabIndex = 2;
             this.btn_Excluir.Text = "Excluir Turma";
             this.btn_Excluir.UseVisualStyleBackColor = true;
@@ -103,9 +105,9 @@
             // btn_Salvar
             // 
             this.btn_Salvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Salvar.Location = new System.Drawing.Point(137, 5);
+            this.btn_Salvar.Location = new System.Drawing.Point(123, 5);
             this.btn_Salvar.Name = "btn_Salvar";
-            this.btn_Salvar.Size = new System.Drawing.Size(119, 23);
+            this.btn_Salvar.Size = new System.Drawing.Size(105, 23);
             this.btn_Salvar.TabIndex = 1;
             this.btn_Salvar.Text = "Salvar Edições";
             this.btn_Salvar.UseVisualStyleBackColor = true;
@@ -116,7 +118,7 @@
             this.btn_Novo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Novo.Location = new System.Drawing.Point(12, 5);
             this.btn_Novo.Name = "btn_Novo";
-            this.btn_Novo.Size = new System.Drawing.Size(119, 23);
+            this.btn_Novo.Size = new System.Drawing.Size(105, 23);
             this.btn_Novo.TabIndex = 0;
             this.btn_Novo.Text = "Nova Turma";
             this.btn_Novo.UseVisualStyleBackColor = true;
@@ -126,14 +128,14 @@
             // 
             this.dgv_Turmas.AllowUserToAddRows = false;
             this.dgv_Turmas.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Turmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Turmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Turmas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Turmas.EnableHeadersVisualStyles = false;
             this.dgv_Turmas.Location = new System.Drawing.Point(12, 12);
@@ -259,6 +261,17 @@
             this.lbl_Vagas.TabIndex = 11;
             this.lbl_Vagas.Text = "Vagas";
             // 
+            // btn_Imprimir1
+            // 
+            this.btn_Imprimir1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Imprimir1.Location = new System.Drawing.Point(456, 5);
+            this.btn_Imprimir1.Name = "btn_Imprimir1";
+            this.btn_Imprimir1.Size = new System.Drawing.Size(105, 23);
+            this.btn_Imprimir1.TabIndex = 5;
+            this.btn_Imprimir1.Text = "Imprimir Turma Y";
+            this.btn_Imprimir1.UseVisualStyleBackColor = true;
+            this.btn_Imprimir1.Click += new System.EventHandler(this.btn_Imprimir1_Click);
+            // 
             // frm_GestaoTurmas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -313,5 +326,6 @@
         private System.Windows.Forms.TextBox txt_DescricaoTurma;
         private System.Windows.Forms.TextBox txt_Vagas;
         private System.Windows.Forms.Label lbl_Vagas;
+        private System.Windows.Forms.Button btn_Imprimir1;
     }
 }
