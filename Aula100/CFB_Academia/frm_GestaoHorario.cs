@@ -37,7 +37,7 @@ namespace CFB_Academia
                 // INSERT
                 vquery = @"
                 INSERT INTO 
-                    tb_professores
+                    tb_horarios
                     (t_descricaohorario)
                     VALUES
                     ('" + txt_DescricaoHorario.Text + "')";
@@ -47,7 +47,7 @@ namespace CFB_Academia
                 // UPDATE
                 vquery = @"
                     UPDATE 
-                        tb_professores 
+                        tb_horarios 
                     SET t_descricaohorario = '" + txt_DescricaoHorario.Text + "' " +
                     "WHERE n_idhorario = " + txt_IDHorario.Text;
             }
@@ -62,7 +62,7 @@ namespace CFB_Academia
                     n_idhorario AS 'ID Horário', 
                     t_descricaohorario AS 'Desc. Horário'
                 FROM
-                    tb_professores
+                    tb_horarios
                 ORDER BY
                     t_descricaohorario
             ";
@@ -78,7 +78,7 @@ namespace CFB_Academia
                 // declara/define variáveis
                 string vquery = @"
                     DELETE FROM
-                        tb_professores
+                        tb_horarios
                     WHERE
                         n_idhorario=" + txt_IDHorario.Text;
 
@@ -93,7 +93,7 @@ namespace CFB_Academia
                         n_idhorario AS 'ID Horário', 
                         t_descricaohorario AS 'Desc. Horário'
                     FROM
-                        tb_professores
+                        tb_horarios
                     ORDER BY
                         t_descricaohorario
                 ";
@@ -121,7 +121,7 @@ namespace CFB_Academia
                     n_idhorario AS 'ID Horário', 
                     t_descricaohorario AS 'Desc. Horário'
                 FROM
-                    tb_professores
+                    tb_horarios
                 ORDER BY
                     t_descricaohorario
             ";
@@ -149,7 +149,7 @@ namespace CFB_Academia
                     SELECT
                         *
                     FROM
-                        tb_professores
+                        tb_horarios
                     WHERE
                         n_idhorario=" + vid;
                 // chama método pra executar a SQL

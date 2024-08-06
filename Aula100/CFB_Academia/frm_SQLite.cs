@@ -64,6 +64,9 @@ namespace CFB_Academia
 
         private void novoAlunoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // valida e abre form
+            frm_NovoAluno frmNovoAluno = new frm_NovoAluno();
+            AbreForm(1, frmNovoAluno);
         }
 
         private void novoUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
@@ -103,6 +106,11 @@ namespace CFB_Academia
             // valida e abre form
             frm_GestaoTurmas frmGestaoTurmas = new frm_GestaoTurmas();
             AbreForm(2, frmGestaoTurmas);
+        }
+
+        private void gestãoDeAlunoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // 
         }
     }
 }
