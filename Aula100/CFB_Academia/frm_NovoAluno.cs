@@ -70,7 +70,7 @@ namespace CFB_Academia
 
         private void btn_Salvar_Click(object sender, EventArgs e)
         {
-            // terá a sql da operação Inserir/Atualizar
+            // terá a sql da operação Inserir
             string sSQL = "";
 
             // INSERT
@@ -130,6 +130,12 @@ namespace CFB_Academia
             cmb_Status.DataSource = new BindingSource(s_Status,null);
             cmb_Status.DisplayMember = "Value";
             cmb_Status.ValueMember = "Key";
+        }
+
+        private void btn_Turma_Click(object sender, EventArgs e)
+        {
+            frm_SelecionarTurma frmSelecionarTurma = new frm_SelecionarTurma(this);
+            frmSelecionarTurma.ShowDialog();
         }
     }
 }

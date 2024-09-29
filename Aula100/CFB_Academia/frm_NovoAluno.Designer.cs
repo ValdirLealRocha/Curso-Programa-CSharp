@@ -192,6 +192,7 @@
             this.btn_Turma.TabIndex = 8;
             this.btn_Turma.Text = "...";
             this.btn_Turma.UseVisualStyleBackColor = true;
+            this.btn_Turma.Click += new System.EventHandler(this.btn_Turma_Click);
             // 
             // btn_Plano
             // 
@@ -266,11 +267,11 @@
         private System.Windows.Forms.Label lbl_Nome;
         private System.Windows.Forms.TextBox txt_NomeAluno;
         private System.Windows.Forms.MaskedTextBox txt_Telefone;
-        private System.Windows.Forms.TextBox txt_Turma;
         private System.Windows.Forms.Label lbl_Turma;
         private System.Windows.Forms.Button btn_Turma;
         private System.Windows.Forms.Button btn_Plano;
         private System.Windows.Forms.TextBox txt_Plano;
         private System.Windows.Forms.Label lbl_Plano;
+        public System.Windows.Forms.TextBox txt_Turma;
     }
 }
